@@ -42,8 +42,8 @@ class Usuario {
 
     /**
      * Recibe el nombre y el autor de libro y lo agrega al array de libros.
-     * @param {*} nombre 
-     * @param {*} autor 
+     * @param {*} nombre - Nombre del libro
+     * @param {*} autor  - Autor del libro
      */
     addBook(nombre, autor) {
         this.libros.push({nombre: nombre, autor: autor});
@@ -61,7 +61,7 @@ class Usuario {
 
 usuario = new Usuario('Esteban', 'Chevalier', [{nombre: 'Harry Potter y la piedra filosofal', autor: 'J. K. Rowling' }], ['Kaisa']);
 
-console.log("Llamada a getFullName : " +usuario.getFullName());
+console.log("Llamada a getFullName : " + usuario.getFullName());
 console.log("Llamada a countMascotas : " + usuario.countMascotas());
 console.log("Llamada a getBooksNames : " + usuario.getBookNames());
 
