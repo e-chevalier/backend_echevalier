@@ -59,7 +59,7 @@ class Usuario {
 
 }
 
-usuario = new Usuario('Esteban', 'Chevalier', [{nombre: 'Harry Potter y la piedra filosofal', autor: 'J. K. Rowling' }], ['Kaisa']);
+let usuario = new Usuario('Esteban', 'Chevalier', [{nombre: 'Harry Potter y la piedra filosofal', autor: 'J. K. Rowling' }], ['Kaisa']);
 
 console.log("Llamada a getFullName : " + usuario.getFullName());
 console.log("Llamada a countMascotas : " + usuario.countMascotas());
@@ -70,5 +70,4 @@ usuario.addBook('Harry Potter y la cámara secreta', 'J. K. Rowling')
 
 console.log("Llamada a countMascotas : " + usuario.countMascotas());
 console.log("Llamada a getBooksNames : " + usuario.getBookNames());
-
 
