@@ -1,0 +1,26 @@
+[
+   {
+      "title":"miprod_1",
+      "price":124.5,
+      "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
+      "id":1
+   },
+   {
+      "title":"miprod_2",
+      "price":24.5,
+      "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
+      "id":2
+   },
+   {
+      "title":"miprod_4",
+      "price":714.5,
+      "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
+      "id":4
+   },
+   {
+      "title":"miprod_3",
+      "price":14.5,
+      "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
+      "id":3
+   }
+]
