@@ -6,6 +6,10 @@ class Contenedor {
         this.fileName = fileName
     }
 
+    /**
+     * Métodoque busca el id máximo en el arhivo indicado.
+     * @returns 
+     */
     async getMaxid(){
         try {
             const stats = await fs.promises.stat(this.fileName)
@@ -16,7 +20,6 @@ class Contenedor {
                 // Initial values object with id:0 for empty array case.
                 const max = productos.reduce((a,b) => a.id > b.id ? a:b, {id: 0} )
                 res = max.id
-                console.log(res)
             } else {
                 console.log("getMaxId: ARCHIVO VACIO")
             }
@@ -27,6 +30,11 @@ class Contenedor {
         }
     }
 
+    /**
+     * Métodoque recibe un objeto, lo guarda en el archivo indicado y retorna el id asignado.
+     * @param {*} obj 
+     * @returns 
+     */
     async save( obj ) {
 
         try {
@@ -35,13 +43,18 @@ class Contenedor {
             productos.push({...obj, id: max + 1})
             await fs.promises.writeFile(this.fileName, JSON.stringify(productos, null, 2))
             return max + 1
-             
+
         } catch (error) {
-            console.log("Error al realizar al appendFile en el método save: " + error)
+            console.log("Error en save method: " + error)
         }
         
     }
 
+    /**
+     * Métodoque recibe un ID y devuelve el objeto con ese ID o null si no está.
+     * @param {*} id 
+     * @returns 
+     */
     async getById( id ) {
         try {
             const stats = await fs.promises.stat(this.fileName)
@@ -61,23 +74,32 @@ class Contenedor {
         }
     }
 
+    /**
+     * Método que retorna un array con los objetos presentese en el archivo indicado.
+     * @returns 
+     */
     async getAll() {
         try {
             const stats = await fs.promises.stat(this.fileName)
-            console.log("size :" + stats.size)
+            let res = []
 
             if( stats.size ) {
-                const content = JSON.parse( await fs.promises.readFile(this.fileName, 'utf-8'))
-                return content
+                res = JSON.parse( await fs.promises.readFile(this.fileName, 'utf-8'))
             } else {
                 console.log("getAll: ARCHIVO VACIO")
             }
+
+            return res
 
         } catch (error) {
             console.log(error)            
         }
     }
 
+    /**
+     * Método que elimina del archivo el objeto indicado en el parametro ID
+     * @param {*} id 
+     */
     async deleteById( id ) {
 
         try {
@@ -90,6 +112,9 @@ class Contenedor {
 
     }
 
+    /**
+     * Método que elimina todos los objetos presentes en el archivo.
+     */
     async deleteAll() {
         try {
             await fs.promises.writeFile(this.fileName, JSON.stringify([], null, 2))            
@@ -99,12 +124,6 @@ class Contenedor {
 
     }
 
-
 }
 
 export { Contenedor }
-
-//const productos = new Contenedor("productos.txt")
-//productos.save({title: 'miprod_1', price: 124.5, thumbnail: 'https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png'})
-
-
