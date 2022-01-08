@@ -3,7 +3,7 @@ const fs = require('fs')
 const leerArchivo = () => {
 
     fs.readFile('./package.json', (err, data) => {
-        if (err) throw err;
+        if (err) throw new Error(err);
         const info = {
             contenidoStr: JSON.stringify(data),
             contenidoObj: JSON.parse(data),
