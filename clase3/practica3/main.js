@@ -1,23 +1,14 @@
 const moment = require('moment')
 
-console.log("Hello")
-
-const today = new Date()
-const birthday = "29/11/1968"
-
 const now = moment()
-console.log(now)
+const birthday = moment("29-11-1968", "DD-MM-YYYY")
+const diffYears = moment().diff(birthday, 'years')
+const diffDays = moment().diff(birthday, 'days')
 
-const mBirthday = moment("29-11-1968", "DD-MM-YYYY")
-console.log(mBirthday)
 
-const difference = moment().diff(mBirthday)
-
-console.log(new Date(difference))
-
-let message = `Hoy es ${today.toLocaleDateString()}
-Nací el ${birthday}
-Desde mi nacimiento han pasado 52 años.
-Desde mi nacimiento han pasado 19036 días.`
+let message = `Hoy es ${now.format('DD/MM/YYYY')}
+Nací el ${birthday.format('DD/MM/YYYY')}
+Desde mi nacimiento han pasado ${diffYears} años.
+Desde mi nacimiento han pasado ${diffDays} días.`
 
 console.log(message)
