@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+<h1>Multer Example</h1>
+
+<form action="/uploadfile" enctype="multipart/form-data" method="post">
+    <input type="file" name="myFile" id="miFile" >
+    <button type="submit">Enviar</button>
+</form>
+
+<form action="/uploadmultiple" enctype="multipart/form-data" method="post">
+    Select Images: <input type="file" name="myFiles" id="miFiles" multiple>
+    <button type="submit">Enviar</button>
+</form>
+
+
+</body>
+</html>

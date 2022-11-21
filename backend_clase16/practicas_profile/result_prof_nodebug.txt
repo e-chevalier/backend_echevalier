@@ -1,0 +1,1083 @@
+Statistical profiling result from nodebug-v8.log, (4666 ticks, 0 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   3700   79.3%          /usr/local/lib/nodejs/bin/node
+    133    2.9%          /usr/lib/x86_64-linux-gnu/libc.so.6
+      6    0.1%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+      3    0.1%          [vdso]
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+    102    2.2%   12.4%  LazyCompile: *randoms file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/components/randoms/services/randomsService.js:7:18
+     20    0.4%    2.4%  LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+      8    0.2%    1.0%  LazyCompile: *normalizeString node:path:66:25
+      6    0.1%    0.7%  LazyCompile: *normalize node:path:1127:12
+      6    0.1%    0.7%  LazyCompile: *_storeHeader node:_http_outgoing:374:22
+      5    0.1%    0.6%  RegExp: ^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$
+      5    0.1%    0.6%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      5    0.1%    0.6%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      4    0.1%    0.5%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      4    0.1%    0.5%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      4    0.1%    0.5%  LazyCompile: *setHeader node:_http_outgoing:574:57
+      4    0.1%    0.5%  LazyCompile: *parserOnHeadersComplete node:_http_common:77:33
+      4    0.1%    0.5%  Function: ^normalizeParseOptions /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/qs/lib/parse.js:203:59
+      3    0.1%    0.4%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      3    0.1%    0.4%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      3    0.1%    0.4%  LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+      3    0.1%    0.4%  LazyCompile: *send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      3    0.1%    0.4%  LazyCompile: *resolve node:path:1091:10
+      3    0.1%    0.4%  LazyCompile: *emit node:events:474:44
+      3    0.1%    0.4%  LazyCompile: *createError /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/http-errors/index.js:49:22
+      3    0.1%    0.4%  LazyCompile: *_write node:internal/streams/writable:283:16
+      3    0.1%    0.4%  LazyCompile: *_addListener node:events:554:22
+      3    0.1%    0.4%  Function: ^parse /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/content-type/index.js:106:16
+      3    0.1%    0.4%  Function: ^applyHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:144:24
+      3    0.1%    0.4%  Function: ^_addListener node:events:554:22
+      2    0.0%    0.2%  LazyCompile: *parserOnIncoming node:_http_server:852:26
+      2    0.0%    0.2%  LazyCompile: *handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:136:31
+      2    0.0%    0.2%  LazyCompile: *append /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/vary/index.js:38:17
+      2    0.0%    0.2%  LazyCompile: *SendStream /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:96:21
+      2    0.0%    0.2%  LazyCompile: *Readable.read node:internal/streams/readable:394:35
+      2    0.0%    0.2%  Function: ^write_ node:_http_outgoing:730:16
+      2    0.0%    0.2%  Function: ^writeHead /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/on-headers/index.js:28:29
+      2    0.0%    0.2%  Function: ^setWriteHeadHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/on-headers/index.js:105:30
+      2    0.0%    0.2%  Function: ^setUnrefTimeout node:internal/timers:372:25
+      2    0.0%    0.2%  Function: ^resolve node:path:1091:10
+      2    0.0%    0.2%  Function: ^processPromiseRejections node:internal/process/promises:211:34
+      2    0.0%    0.2%  Function: ^parserOnIncoming node:_http_server:852:26
+      2    0.0%    0.2%  Function: ^onstat /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:721:33
+      2    0.0%    0.2%  Function: ^onResponseHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:140:47
+      2    0.0%    0.2%  Function: ^nextTick node:internal/process/task_queues:104:18
+      2    0.0%    0.2%  Function: ^Socket._writeGeneric node:net:769:42
+      2    0.0%    0.2%  Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/request.js:467:36
+      1    0.0%    0.1%  RegExp: ^text\/|^application\/(javascript|json)
+      1    0.0%    0.1%  RegExp: (?:^|[\\/])\.\.(?:[\\/]|$)
+      1    0.0%    0.1%  LazyCompile: *writeHead node:_http_server:269:19
+      1    0.0%    0.1%  LazyCompile: *parse /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/vary/index.js:96:16
+      1    0.0%    0.1%  LazyCompile: *get node:_http_incoming:108:16
+      1    0.0%    0.1%  LazyCompile: *fastparse /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.1%  LazyCompile: *extname node:path:1385:10
+      1    0.0%    0.1%  LazyCompile: *end node:_http_outgoing:833:45
+      1    0.0%    0.1%  Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      1    0.0%    0.1%  Function: ^writeOrBuffer node:internal/streams/writable:365:23
+      1    0.0%    0.1%  Function: ^updateChildren node:internal/modules/cjs/loader:165:24
+      1    0.0%    0.1%  Function: ^update node:internal/crypto/hash:95:40
+      1    0.0%    0.1%  Function: ^toPathIfFileURL node:internal/url:1496:25
+      1    0.0%    0.1%  Function: ^stringify /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:1123:20
+      1    0.0%    0.1%  Function: ^socketOnDrain node:_http_server:559:23
+      1    0.0%    0.1%  Function: ^shouldTransform /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:270:26
+      1    0.0%    0.1%  Function: ^shift node:internal/fixed_queue:108:8
+      1    0.0%    0.1%  Function: ^serveStatic /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/serve-static/index.js:72:31
+      1    0.0%    0.1%  Function: ^restore /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:626:17
+      1    0.0%    0.1%  Function: ^realpathSync node:fs:2412:22
+      1    0.0%    0.1%  Function: ^randoms_nodebug file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/components/randoms/controllers/randomsController.js:5:26
+      1    0.0%    0.1%  Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    0.0%    0.1%  Function: ^preferredEncodings /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/negotiator/lib/encoding.js:138:28
+      1    0.0%    0.1%  Function: ^parseurl /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/parseurl/index.js:35:19
+      1    0.0%    0.1%  Function: ^parserOnMessageComplete node:_http_common:147:33
+      1    0.0%    0.1%  Function: ^parseExtendedQueryString /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/utils.js:288:34
+      1    0.0%    0.1%  Function: ^parseAcceptEncoding /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/negotiator/lib/encoding.js:31:29
+      1    0.0%    0.1%  Function: ^onwrite node:internal/streams/writable:425:17
+      1    0.0%    0.1%  Function: ^onParserExecuteCommon node:_http_server:691:31
+      1    0.0%    0.1%  Function: ^onDestroy node:internal/streams/destroy:73:21
+      1    0.0%    0.1%  Function: ^normalize node:path:1127:12
+      1    0.0%    0.1%  Function: ^noop node:internal/util/debuglog:47:14
+      1    0.0%    0.1%  Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/route.js:114:16
+      1    0.0%    0.1%  Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+      1    0.0%    0.1%  Function: ^markAsUntransferable node:internal/buffer:1048:30
+      1    0.0%    0.1%  Function: ^listenerCount node:events:858:23
+      1    0.0%    0.1%  Function: ^jsonParser /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/body-parser/lib/types/json.js:98:30
+      1    0.0%    0.1%  Function: ^header /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:759:29
+      1    0.0%    0.1%  Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      1    0.0%    0.1%  Function: ^getTimerDuration node:internal/timers:383:26
+      1    0.0%    0.1%  Function: ^getObserverType node:internal/perf/observe:117:25
+      1    0.0%    0.1%  Function: ^getESMFacade node:internal/bootstrap/loaders:264:15
+      1    0.0%    0.1%  Function: ^get node:internal/streams/readable:1165:8
+      1    0.0%    0.1%  Function: ^fromStringFast node:buffer:413:24
+      1    0.0%    0.1%  Function: ^fromString node:buffer:432:20
+      1    0.0%    0.1%  Function: ^fresh /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/parseurl/index.js:153:16
+      1    0.0%    0.1%  Function: ^format /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/content-type/index.js:65:17
+      1    0.0%    0.1%  Function: ^fastparse /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.1%  Function: ^error /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/serve-static/index.js:115:39
+      1    0.0%    0.1%  Function: ^entitytag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/etag/index.js:39:20
+      1    0.0%    0.1%  Function: ^endReadableNT node:internal/streams/readable:1338:23
+      1    0.0%    0.1%  Function: ^end node:_http_outgoing:833:45
+      1    0.0%    0.1%  Function: ^destroyHooksExist node:internal/async_hooks:487:27
+      1    0.0%    0.1%  Function: ^createError /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/http-errors/index.js:49:22
+      1    0.0%    0.1%  Function: ^cors /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:159:16
+      1    0.0%    0.1%  Function: ^configureOrigin /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:36:27
+      1    0.0%    0.1%  Function: ^configureCredentials /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:84:32
+      1    0.0%    0.1%  Function: ^compileFunction node:vm:308:25
+      1    0.0%    0.1%  Function: ^clearBuffer node:internal/streams/writable:529:21
+      1    0.0%    0.1%  Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      1    0.0%    0.1%  Function: ^canBeRequiredByUsers node:internal/bootstrap/loaders:240:30
+      1    0.0%    0.1%  Function: ^basename node:path:1306:11
+      1    0.0%    0.1%  Function: ^assignSocket node:_http_server:239:62
+      1    0.0%    0.1%  Function: ^arrayClone node:events:883:20
+      1    0.0%    0.1%  Function: ^append /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/vary/index.js:38:17
+      1    0.0%    0.1%  Function: ^alloc node:internal/freelist:15:8
+      1    0.0%    0.1%  Function: ^alignPool node:buffer:159:19
+      1    0.0%    0.1%  Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      1    0.0%    0.1%  Function: ^afterWrite node:internal/streams/writable:487:20
+      1    0.0%    0.1%  Function: ^_write node:internal/streams/writable:283:16
+      1    0.0%    0.1%  Function: ^_getMaxListeners node:events:403:26
+      1    0.0%    0.1%  Function: ^_flush node:_http_outgoing:934:51
+      1    0.0%    0.1%  Function: ^Writable.uncork node:internal/streams/writable:341:37
+      1    0.0%    0.1%  Function: ^Socket.resume node:net:630:35
+      1    0.0%    0.1%  Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    0.0%    0.1%  Function: ^Hash node:internal/crypto/hash:58:14
+      1    0.0%    0.1%  Function: ^<anonymous> node:internal/fs/utils:668:38
+      1    0.0%    0.1%  Function: ^<anonymous> node:_http_outgoing:558:44
+      1    0.0%    0.1%  Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:204:37
+
+ [C++]:
+   ticks  total  nonlib   name
+    146    3.1%   17.7%  __write@@GLIBC_2.2.5
+     75    1.6%    9.1%  epoll_pwait@@GLIBC_2.6
+     55    1.2%    6.7%  fwrite@@GLIBC_2.2.5
+     42    0.9%    5.1%  writev@@GLIBC_2.2.5
+     35    0.8%    4.2%  __read@@GLIBC_2.2.5
+     34    0.7%    4.1%  pthread_cond_signal@@GLIBC_2.3.2
+     22    0.5%    2.7%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     13    0.3%    1.6%  __mprotect@@GLIBC_PRIVATE
+     13    0.3%    1.6%  _IO_file_xsputn@@GLIBC_2.2.5
+     10    0.2%    1.2%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+     10    0.2%    1.2%  __libc_malloc@@GLIBC_2.2.5
+      5    0.1%    0.6%  __lll_lock_wait_private@@GLIBC_PRIVATE
+      3    0.1%    0.4%  operator delete(void*)@@GLIBCXX_3.4
+      3    0.1%    0.4%  cfree@GLIBC_2.2.5
+      3    0.1%    0.4%  __pthread_mutex_lock@GLIBC_2.2.5
+      2    0.0%    0.2%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      2    0.0%    0.2%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      2    0.0%    0.2%  getrusage@@GLIBC_2.2.5
+      2    0.0%    0.2%  __pthread_getspecific@GLIBC_2.2.5
+      2    0.0%    0.2%  __errno_location@@GLIBC_2.2.5
+      2    0.0%    0.2%  _IO_default_xsputn@@GLIBC_2.2.5
+      1    0.0%    0.1%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<unsigned long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const@@GLIBCXX_3.4
+      1    0.0%    0.1%  std::ostream::put(char)@@GLIBCXX_3.4
+      1    0.0%    0.1%  std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.0%    0.1%  std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.0%    0.1%  shutdown@@GLIBC_2.2.5
+      1    0.0%    0.1%  operator new[](unsigned long)@@GLIBCXX_3.4
+      1    0.0%    0.1%  operator delete[](void*)@@GLIBCXX_3.4
+      1    0.0%    0.1%  epoll_ctl@@GLIBC_2.3.2
+      1    0.0%    0.1%  accept4@@GLIBC_2.10
+      1    0.0%    0.1%  __pthread_rwlock_unlock@GLIBC_2.2.5
+      1    0.0%    0.1%  __pthread_rwlock_tryrdlock@GLIBC_2.2.5
+      1    0.0%    0.1%  __pthread_mutex_unlock@GLIBC_2.2.5
+      1    0.0%    0.1%  __pthread_mutex_init@GLIBC_2.2.5
+      1    0.0%    0.1%  __printf_fp@@GLIBC_2.2.5
+      1    0.0%    0.1%  __munmap@@GLIBC_PRIVATE
+      1    0.0%    0.1%  __mmap@@GLIBC_PRIVATE
+      1    0.0%    0.1%  __madvise@@GLIBC_PRIVATE
+
+ [Summary]:
+   ticks  total  nonlib   name
+    326    7.0%   39.6%  JavaScript
+    498   10.7%   60.4%  C++
+    256    5.5%   31.1%  GC
+   3842   82.3%          Shared libraries
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     92   35.7%    2.0%  __write@@GLIBC_2.2.5
+     53   20.5%    1.1%  fwrite@@GLIBC_2.2.5
+     42   16.3%    0.9%  writev@@GLIBC_2.2.5
+     20    7.8%    0.4%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     12    4.7%    0.3%  _IO_file_xsputn@@GLIBC_2.2.5
+      9    3.5%    0.2%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      5    1.9%    0.1%  __mprotect@@GLIBC_PRIVATE
+      4    1.6%    0.1%  __libc_malloc@@GLIBC_2.2.5
+      3    1.2%    0.1%  __pthread_mutex_lock@GLIBC_2.2.5
+      2    0.8%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      2    0.8%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      2    0.8%    0.0%  pthread_cond_signal@@GLIBC_2.3.2
+      2    0.8%    0.0%  operator delete(void*)@@GLIBCXX_3.4
+      2    0.8%    0.0%  _IO_default_xsputn@@GLIBC_2.2.5
+      1    0.4%    0.0%  std::ostream::put(char)@@GLIBCXX_3.4
+      1    0.4%    0.0%  std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.4%    0.0%  std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.4%    0.0%  operator new[](unsigned long)@@GLIBCXX_3.4
+      1    0.4%    0.0%  operator delete[](void*)@@GLIBCXX_3.4
+      1    0.4%    0.0%  cfree@GLIBC_2.2.5
+      1    0.4%    0.0%  __pthread_rwlock_unlock@GLIBC_2.2.5
+      1    0.4%    0.0%  __pthread_rwlock_tryrdlock@GLIBC_2.2.5
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   3700   79.3%  /usr/local/lib/nodejs/bin/node
+   2155   58.2%    /usr/local/lib/nodejs/bin/node
+    157    7.3%      Function: ^compileFunction node:vm:308:25
+    148   94.3%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+    145   98.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+    121   83.4%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+     24   16.6%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      3    2.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1057:37
+      3  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      9    5.7%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      9  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1057:37
+      9  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+    148    6.9%      /usr/local/lib/nodejs/bin/node
+     40   27.0%        Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:204:37
+     40  100.0%          Function: ^optionsCallback /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:198:34
+     40  100.0%            Function: ^corsMiddleware /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:203:35
+     18   12.2%        Function: ^pipe /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:510:43
+     18  100.0%          Function: ^serveStatic /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/serve-static/index.js:72:31
+     13   72.2%            LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+      5   27.8%            Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+     10    6.8%        Function: ^expressInit /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/middleware/init.js:29:30
+      7   70.0%          LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+      7  100.0%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+      3   30.0%          Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      3  100.0%            Function: ^trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+      8    5.4%        LazyCompile: *header /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:759:29
+      8  100.0%          Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:239:25
+      8  100.0%            Function: ^randoms_nodebug file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/components/randoms/controllers/randomsController.js:5:26
+      7    4.7%        Function: ^parseAcceptEncoding /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/negotiator/lib/encoding.js:31:29
+      7  100.0%          Function: ^preferredEncodings /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/negotiator/lib/encoding.js:138:28
+      4   57.1%            Function: ^encodings /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/negotiator/index.js:52:52
+      3   42.9%            LazyCompile: *onResponseHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:140:47
+      6    4.1%        Function: ^<anonymous> node:internal/fs/utils:357:35
+      6  100.0%          Function: ^<anonymous> node:internal/fs/utils:668:38
+      6  100.0%            Function: ^<anonymous> node:internal/fs/utils:680:42
+      5    3.4%        Function: ^format /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/content-type/index.js:65:17
+      3   60.0%          LazyCompile: *send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      3  100.0%            Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:239:25
+      2   40.0%          Function: ^setCharset /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/utils.js:247:41
+      2  100.0%            Function: ^send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      4    2.7%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:488:36
+      4  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:553:30
+      4  100.0%            LazyCompile: ~packageExportsResolve node:internal/modules/esm/resolve:656:31
+      4    2.7%        Function: ^parse /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/content-type/index.js:106:16
+      2   50.0%          LazyCompile: *send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      2  100.0%            Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:239:25
+      2   50.0%          Function: ^setCharset /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/utils.js:247:41
+      2  100.0%            Function: ^send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      4    2.7%        Function: ^header /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:759:29
+      3   75.0%          Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:239:25
+      3  100.0%            Function: ^randoms_nodebug file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/components/randoms/controllers/randomsController.js:5:26
+      1   25.0%          Function: ^send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      1  100.0%            Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:239:25
+      3    2.0%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      3  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      2   66.7%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1   33.3%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      3    2.0%        Function: ^FastBuffer node:internal/buffer:958:14
+      3  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      3  100.0%            Function: ^createPool node:buffer:151:20
+      2    1.4%        LazyCompile: ~pipe /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:510:43
+      1   50.0%          LazyCompile: ~serveStatic /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/serve-static/index.js:72:31
+      1  100.0%            Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      1   50.0%          Function: ^serveStatic /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/serve-static/index.js:72:31
+      1  100.0%            Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      2    1.4%        LazyCompile: *setHeader node:_http_outgoing:574:57
+      2  100.0%          LazyCompile: *send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      2  100.0%            Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:239:25
+      2    1.4%        Function: ^compressible /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compressible/index.js:41:23
+      2  100.0%          Function: ^shouldCompress /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:254:25
+      2  100.0%            Function: ^onResponseHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:140:47
+      2    1.4%        Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      2  100.0%          Function: ^<anonymous> node:_http_outgoing:564:45
+      2  100.0%            Function: ^setHeader node:_http_outgoing:574:57
+    119    5.5%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+    101   84.9%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+     18   17.8%          Function: ~<anonymous> node:crypto:1:1
+     18  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     13   12.9%          Function: ~<anonymous> node:http:1:1
+     13  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     10    9.9%          Function: ~<anonymous> node:tty:1:1
+     10  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7    6.9%          Function: ~<anonymous> node:_http_client:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      6    5.9%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5    5.0%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      5  100.0%            LazyCompile: ~get node:crypto:287:8
+      5    5.0%          Function: ~<anonymous> node:internal/child_process:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5    5.0%          Function: ~<anonymous> node:child_process:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    4.0%          LazyCompile: ~initCJSParse node:internal/modules/esm/translators:58:28
+      4  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:146:60
+      4    4.0%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    4.0%          Function: ~<anonymous> node:assert:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    3.0%          LazyCompile: ~lazyLoadStreams node:fs:2845:25
+      3  100.0%            LazyCompile: ~get ReadStream node:fs:2988:17
+      3    3.0%          Function: ~<anonymous> node:_http_common:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.0%          LazyCompile: ~get BlockList node:net:1775:16
+      2  100.0%            /usr/local/lib/nodejs/bin/node
+      2    2.0%          Function: ~<anonymous> node:net:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.0%          Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.0%          Function: ~<anonymous> node:cluster:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      9    7.6%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      7   77.8%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      7  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2   22.2%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:44:26
+      2  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      9    7.6%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      9  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      9  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+    107    5.0%      Function: ^compression /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:59:31
+     87   81.3%        LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+     87  100.0%          LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+     87  100.0%            Function: ^expressInit /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/middleware/init.js:29:30
+     20   18.7%        Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+     20  100.0%          Function: ^trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+     19   95.0%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+      1    5.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:275:64
+     97    4.5%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+     96   99.0%        Function: ^Socket._writeGeneric node:net:769:42
+     96  100.0%          Function: ^Socket._writev node:net:801:36
+     96  100.0%            Function: ^doWrite node:internal/streams/writable:398:17
+      1    1.0%        LazyCompile: ~Socket._writeGeneric node:net:769:42
+      1  100.0%          LazyCompile: ~Socket._writev node:net:801:36
+      1  100.0%            LazyCompile: ~doWrite node:internal/streams/writable:398:17
+     87    4.0%      Function: ^stat node:fs:1454:14
+     87  100.0%        Function: ^sendFile /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:716:51
+     87  100.0%          Function: ^pipe /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:510:43
+     87  100.0%            Function: ^serveStatic /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/serve-static/index.js:72:31
+     82    3.8%      LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+     36   43.9%        LazyCompile: *handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:136:31
+     36  100.0%          Function: ^router /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:46:18
+     36  100.0%            LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+     17   20.7%        Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:136:31
+     14   82.4%          Function: ^router /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:46:18
+      8   57.1%            LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+      6   42.9%            Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      3   17.6%          Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/application.js:158:29
+      3  100.0%            Function: ^app /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/express.js:38:21
+     10   12.2%        Function: ^error /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/serve-static/index.js:115:39
+      9   90.0%          LazyCompile: *emit node:events:474:44
+      9  100.0%            Function: ^error /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:267:45
+      1   10.0%          Function: ^emit node:events:474:44
+      1  100.0%            Function: ^error /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:267:45
+     10   12.2%        Function: ^cors /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:159:16
+     10  100.0%          Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:219:57
+     10  100.0%            Function: ^originCallback /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:213:39
+      8    9.8%        Function: ^jsonParser /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/body-parser/lib/types/json.js:98:30
+      4   50.0%          LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+      4  100.0%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+      4   50.0%          Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      4  100.0%            Function: ^trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+      1    1.2%        Function: ^compression /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:59:31
+      1  100.0%          Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+     74    3.4%      Function: ^stringify /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:1123:20
+     74  100.0%        Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:239:25
+     74  100.0%          Function: ^randoms_nodebug file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/components/randoms/controllers/randomsController.js:5:26
+     74  100.0%            /usr/local/lib/nodejs/bin/node
+     47    2.2%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     47  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+     11   23.4%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+     11  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      8   17.0%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:414:29
+      8  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      6   12.8%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      6  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5   10.6%          Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      5  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    6.4%          Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    6.4%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    4.3%          LazyCompile: ~initializeSourceMapsHandlers node:internal/bootstrap/pre_execution:453:38
+      2  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      2    4.3%          Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.1%          LazyCompile: ~setupInspectorHooks node:internal/bootstrap/pre_execution:225:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1    2.1%          LazyCompile: ~initializeReport node:internal/bootstrap/pre_execution:175:26
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1    2.1%          Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.1%          Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.1%          Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.1%          Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.1%          Function: ~<anonymous> node:internal/bootstrap/pre_execution:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     46    2.1%      Function: ^Hash node:internal/crypto/hash:58:14
+     46  100.0%        Function: ^createHash node:crypto:129:20
+     46  100.0%          Function: ^entitytag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/etag/index.js:39:20
+     45   97.8%            Function: ^etag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/etag/index.js:70:15
+      1    2.2%            LazyCompile: ~etag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/etag/index.js:70:15
+     30    1.4%      Function: ^writeHead node:_http_server:269:19
+     30  100.0%        Function: ^writeHead /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/on-headers/index.js:28:29
+     21   70.0%          Function: ^_implicitHeader node:_http_server:264:68
+     21  100.0%            Function: ^end /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:92:28
+      9   30.0%          LazyCompile: *send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      9  100.0%            Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:239:25
+     28    1.3%      Function: ^setWriteHeadHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/on-headers/index.js:105:30
+     28  100.0%        Function: ^writeHead /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/on-headers/index.js:28:29
+     22   78.6%          Function: ^_implicitHeader node:_http_server:264:68
+     22  100.0%            Function: ^end /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:92:28
+      6   21.4%          LazyCompile: *send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      6  100.0%            Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:239:25
+     28    1.3%      Function: ^expressInit /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/middleware/init.js:29:30
+     19   67.9%        LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+     19  100.0%          LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+     19  100.0%            Function: ^query /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/middleware/query.js:39:24
+      9   32.1%        Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      9  100.0%          Function: ^trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+      5   55.6%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+      4   44.4%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:275:64
+     27    1.3%      LazyCompile: *_storeHeader node:_http_outgoing:374:22
+     21   77.8%        Function: ^writeHead node:_http_server:269:19
+     21  100.0%          Function: ^writeHead /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/on-headers/index.js:28:29
+     11   52.4%            Function: ^_implicitHeader node:_http_server:264:68
+     10   47.6%            LazyCompile: *send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      6   22.2%        LazyCompile: *writeHead node:_http_server:269:19
+      6  100.0%          Function: ^writeHead /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/on-headers/index.js:28:29
+      6  100.0%            LazyCompile: *send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+     27    1.3%      Function: ^update node:internal/crypto/hash:95:40
+     27  100.0%        Function: ^entitytag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/etag/index.js:39:20
+     27  100.0%          Function: ^etag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/etag/index.js:70:15
+     16   59.3%            LazyCompile: *send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+     11   40.7%            Function: ^generateETag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/utils.js:272:32
+     27    1.3%      Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:239:25
+     27  100.0%        Function: ^randoms_nodebug file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/components/randoms/controllers/randomsController.js:5:26
+     27  100.0%          /usr/local/lib/nodejs/bin/node
+     24    1.1%      Function: ^clearIncoming node:_http_server:749:23
+     24  100.0%        Function: ^resOnFinish node:_http_server:788:21
+     23   95.8%          LazyCompile: *emit node:events:474:44
+     23  100.0%            Function: ^onFinish node:_http_outgoing:828:18
+      1    4.2%          Function: ^emit node:events:474:44
+      1  100.0%            Function: ^onFinish node:_http_outgoing:828:18
+     22    1.0%      Function: ^originalurl /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/parseurl/index.js:65:22
+     22  100.0%        Function: ^serveStatic /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/serve-static/index.js:72:31
+     15   68.2%          LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+     15  100.0%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+      7   31.8%          Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      7  100.0%            Function: ^trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+     70    1.9%    Function: ^randoms_nodebug file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/components/randoms/controllers/randomsController.js:5:26
+     57   81.4%      Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+     56   98.2%        Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/route.js:114:16
+     56  100.0%          Function: ^dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/route.js:98:45
+     56  100.0%            Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      1    1.8%        LazyCompile: ~next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/route.js:114:16
+      1  100.0%          Function: ^dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/route.js:98:45
+      1  100.0%            Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+     13   18.6%      /usr/local/lib/nodejs/bin/node
+
+    146    3.1%  __write@@GLIBC_2.2.5
+     92   63.0%    /usr/local/lib/nodejs/bin/node
+      6    6.5%      /usr/local/lib/nodejs/bin/node
+      1   16.7%        LazyCompile: ~populateStatusesMap /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/statuses/index.js:60:30
+      1  100.0%          Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/statuses/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1   16.7%        LazyCompile: ~finalizeResolution node:internal/modules/esm/resolve:391:28
+      1  100.0%          LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:966:23
+      1  100.0%            LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1039:24
+      1   16.7%        LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/categories.js:149:25
+      1  100.0%          /usr/local/lib/nodejs/bin/node
+      1  100.0%            LazyCompile: ~setup /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/categories.js:142:15
+      1   16.7%        LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/console.js:5:10
+      1  100.0%          LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/logLevelFilter.js:4:10
+      1  100.0%            LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/log4js.js:42:29
+      1   16.7%        Function: ^configureOrigin /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:36:27
+      1  100.0%          Function: ^cors /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:159:16
+      1  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:219:57
+      1   16.7%        Function: ^applyHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:144:24
+      1  100.0%          Function: ^applyHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:144:24
+      1  100.0%            Function: ^applyHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:144:24
+      2    2.2%      LazyCompile: ~retry /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/graceful-fs/graceful-fs.js:378:16
+      2  100.0%        LazyCompile: ~resetQueue /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/graceful-fs/graceful-fs.js:364:21
+      2  100.0%          LazyCompile: ~closeSync /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/graceful-fs/graceful-fs.js:72:24
+      2  100.0%            Function: ^readFileSync node:fs:450:22
+      2    2.2%      LazyCompile: ~json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:239:25
+      2  100.0%        LazyCompile: ~randoms_nodebug file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/components/randoms/controllers/randomsController.js:5:26
+      2  100.0%          /usr/local/lib/nodejs/bin/node
+      2    2.2%      LazyCompile: ~handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      2  100.0%        LazyCompile: ~trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+      2  100.0%          LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:275:64
+      2  100.0%            LazyCompile: ~process_params /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:333:47
+      2    2.2%      LazyCompile: ~getEncodingPriority /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/negotiator/lib/encoding.js:98:29
+      1   50.0%        LazyCompile: ~getPriority /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/negotiator/lib/encoding.js:149:53
+      1  100.0%          /usr/local/lib/nodejs/bin/node
+      1  100.0%            LazyCompile: ~preferredEncodings /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/negotiator/lib/encoding.js:138:28
+      1   50.0%        Function: ^getPriority /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/negotiator/lib/encoding.js:149:53
+      1  100.0%          /usr/local/lib/nodejs/bin/node
+      1  100.0%            LazyCompile: ~preferredEncodings /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/negotiator/lib/encoding.js:138:28
+      2    2.2%      LazyCompile: ~createError /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/http-errors/index.js:49:22
+      2  100.0%        LazyCompile: ~error /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:267:45
+      2  100.0%          LazyCompile: ~onStatError /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:416:57
+      2  100.0%            LazyCompile: ~next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:732:17
+      1    1.1%      LazyCompile: ~writeHead /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/on-headers/index.js:28:29
+      1  100.0%        Function: ^_implicitHeader node:_http_server:264:68
+      1  100.0%          LazyCompile: ~end /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:92:28
+      1  100.0%            LazyCompile: ~send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      1    1.1%      LazyCompile: ~value node:internal/console/constructor:300:20
+      1  100.0%        LazyCompile: ~value node:internal/console/constructor:321:20
+      1  100.0%          LazyCompile: ~log node:internal/console/constructor:359:6
+      1  100.0%            /usr/local/lib/nodejs/bin/node
+      1    1.1%      LazyCompile: ~value node:internal/console/constructor:258:20
+      1  100.0%        LazyCompile: ~log node:internal/console/constructor:359:6
+      1  100.0%          /usr/local/lib/nodejs/bin/node
+      1  100.0%            LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/console.js:5:10
+      1    1.1%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:70:31
+      1    1.1%      LazyCompile: ~stat node:internal/modules/cjs/loader:151:14
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1    1.1%      LazyCompile: ~startListeningIfSignal node:internal/process/signal:22:32
+      1  100.0%        LazyCompile: ~emit node:events:474:44
+      1  100.0%          LazyCompile: ~_addListener node:events:554:22
+      1  100.0%            LazyCompile: ~addListener node:events:622:58
+      1    1.1%      LazyCompile: ~socketOnEnd node:_http_server:602:21
+      1  100.0%        LazyCompile: ~emit node:events:474:44
+      1  100.0%          LazyCompile: ~endReadableNT node:internal/streams/readable:1338:23
+      1  100.0%            LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.1%      LazyCompile: ~setUnrefTimeout node:internal/timers:372:25
+      1  100.0%        LazyCompile: ~cache node:internal/http:26:15
+      1  100.0%          LazyCompile: ~utcDate node:internal/http:21:17
+      1  100.0%            LazyCompile: ~_storeHeader node:_http_outgoing:374:22
+      1    1.1%      LazyCompile: ~serverRoutes file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/routes/index.js:9:29
+      1  100.0%        Script: ~<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/server.js:1:1
+      1  100.0%          /usr/local/lib/nodejs/bin/node
+      1  100.0%            /usr/local/lib/nodejs/bin/node
+      1    1.1%      LazyCompile: ~serveStatic /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/serve-static/index.js:72:31
+      1  100.0%        LazyCompile: ~handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          LazyCompile: ~trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+      1  100.0%            LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:275:64
+      1    1.1%      LazyCompile: ~selectColor /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/streamroller/node_modules/debug/src/common.js:41:22
+      1  100.0%        LazyCompile: ~createDebug /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/streamroller/node_modules/debug/src/common.js:60:22
+      1  100.0%          Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/streamroller/lib/RollingFileWriteStream.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1    1.1%      LazyCompile: ~resolve node:path:1091:10
+      1  100.0%        LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:81:28
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.1%      LazyCompile: ~resolve node:internal/modules/esm/loader:509:16
+      1  100.0%        LazyCompile: ~getModuleJob node:internal/modules/esm/loader:242:21
+      1  100.0%          LazyCompile: ~import node:internal/modules/esm/loader:324:15
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/modules/run_main:51:29
+      1    1.1%      LazyCompile: ~reduceToSingleString node:internal/util/inspect:1902:30
+      1  100.0%        LazyCompile: ~formatRaw node:internal/util/inspect:820:19
+      1  100.0%          LazyCompile: ~formatValue node:internal/util/inspect:745:21
+      1  100.0%            LazyCompile: ~inspect node:internal/util/inspect:292:17
+      1    1.1%      LazyCompile: ~realpathSync node:fs:2412:22
+      1  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1    1.1%      LazyCompile: ~readFileSync node:fs:450:22
+      1  100.0%        LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:192:34
+      1  100.0%          LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:146:60
+      1  100.0%            /usr/local/lib/nodejs/bin/node
+      1    1.1%      LazyCompile: ~randoms_nodebug file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/components/randoms/controllers/randomsController.js:5:26
+      1  100.0%        LazyCompile: ~handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          LazyCompile: ~next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/route.js:114:16
+      1  100.0%            LazyCompile: ~dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/route.js:98:45
+      1    1.1%      LazyCompile: ~prefinish node:internal/streams/writable:719:19
+      1  100.0%        Function: ^finishMaybe node:internal/streams/writable:731:21
+      1  100.0%          LazyCompile: ~Writable.end node:internal/streams/writable:594:34
+      1  100.0%            LazyCompile: ~Socket.end node:net:608:32
+      1    1.1%      LazyCompile: ~pipe /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:510:43
+      1  100.0%        LazyCompile: ~serveStatic /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/serve-static/index.js:72:31
+      1  100.0%          LazyCompile: ~handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+      1    1.1%      LazyCompile: ~onResponseHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:140:47
+      1  100.0%        LazyCompile: ~writeHead /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/on-headers/index.js:28:29
+      1  100.0%          LazyCompile: ~_implicitHeader node:_http_server:264:68
+      1  100.0%            LazyCompile: ~end /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:92:28
+      1    1.1%      LazyCompile: ~onDestroy node:internal/streams/destroy:73:21
+      1  100.0%        Function: ^onError node:_http_incoming:374:17
+      1  100.0%          LazyCompile: ~_destroy node:_http_incoming:176:55
+      1  100.0%            LazyCompile: ~_destroy node:internal/streams/destroy:70:18
+      1    1.1%      LazyCompile: ~nameFunc /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/http-errors/index.js:250:19
+      1  100.0%        LazyCompile: ~createClientErrorConstructor /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/http-errors/index.js:133:39
+      1  100.0%          LazyCompile: ~forEachCode /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/http-errors/index.js:265:38
+      1  100.0%            /usr/local/lib/nodejs/bin/node
+      1    1.1%      LazyCompile: ~log /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/logger.js:82:6
+      1  100.0%        LazyCompile: ~Logger.<computed> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/logger.js:139:44
+      1  100.0%          Script: ~<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/server.js:1:1
+      1  100.0%            /usr/local/lib/nodejs/bin/node
+      1    1.1%      LazyCompile: ~listOnTimeout node:internal/timers:507:25
+      1  100.0%        LazyCompile: ~processTimers node:internal/timers:487:25
+      1    1.1%      LazyCompile: ~link node:internal/modules/esm/module_job:69:18
+      1  100.0%        /usr/local/lib/nodejs/bin/node
+      1    1.1%      LazyCompile: ~initializeReportSignalHandlers node:internal/bootstrap/pre_execution:194:40
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.1%      LazyCompile: ~howMuchToRead node:internal/streams/readable:377:23
+      1  100.0%        Function: ^Readable.read node:internal/streams/readable:394:35
+      1  100.0%          LazyCompile: ~Socket.read node:net:639:33
+      1  100.0%            Function: ^flow node:internal/streams/readable:1008:14
+      1    1.1%      LazyCompile: ~handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:136:31
+      1  100.0%        LazyCompile: ~handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/application.js:158:29
+      1  100.0%          LazyCompile: ~app /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/express.js:38:21
+      1  100.0%            LazyCompile: ~emit node:events:474:44
+      1    1.1%      LazyCompile: ~handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/application.js:158:29
+      1  100.0%        LazyCompile: ~app /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/express.js:38:21
+      1  100.0%          LazyCompile: ~emit node:events:474:44
+      1  100.0%            LazyCompile: ~parserOnIncoming node:_http_server:852:26
+      1    1.1%      LazyCompile: ~getSourceMapsEnabled node:internal/source_map/source_map_cache:43:30
+      1  100.0%        LazyCompile: ~maybeCacheSourceMap node:internal/source_map/source_map_cache:74:29
+      1  100.0%          LazyCompile: ~moduleStrategy node:internal/modules/esm/translators:110:56
+      1  100.0%            LazyCompile: ~moduleProvider node:internal/modules/esm/loader:279:28
+      1    1.1%      LazyCompile: ~getPackageType node:internal/modules/esm/resolve:826:24
+      1  100.0%        LazyCompile: ~getFileProtocolModuleFormat node:internal/modules/esm/get_format:75:37
+      1  100.0%          LazyCompile: ~defaultGetFormatWithoutErrors node:internal/modules/esm/get_format:92:39
+      1  100.0%            LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1039:24
+      1    1.1%      LazyCompile: ~getOptionValue node:internal/options:39:24
+      1  100.0%        LazyCompile: ~setupDebugEnv node:internal/bootstrap/pre_execution:186:23
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.1%      LazyCompile: ~getHeader node:_http_outgoing:590:57
+      1  100.0%        LazyCompile: ~shouldTransform /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:270:26
+      1  100.0%          LazyCompile: ~onResponseHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:140:47
+      1  100.0%            LazyCompile: ~writeHead /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/on-headers/index.js:28:29
+      1    1.1%      LazyCompile: ~getAppender /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/index.js:48:21
+      1  100.0%        LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/index.js:112:41
+      1  100.0%          /usr/local/lib/nodejs/bin/node
+      1  100.0%            LazyCompile: ~setup /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/index.js:101:15
+      1    1.1%      LazyCompile: ~fileAppender /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/file.js:29:22
+      1  100.0%        LazyCompile: ~configure /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/file.js:111:19
+      1  100.0%          LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/index.js:90:34
+      1  100.0%            LazyCompile: ~onlyOnMaster /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/clustering.js:86:17
+      1    1.1%      LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:70:31
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.1%      LazyCompile: ~encodePathChars node:internal/url:1440:25
+      1  100.0%        LazyCompile: ~pathToFileURL node:internal/url:1455:23
+      1  100.0%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:875:24
+      1  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:966:23
+      1    1.1%      LazyCompile: ~enabledHooksExist node:internal/async_hooks:475:27
+      1  100.0%        LazyCompile: ~popAsyncContext node:internal/async_hooks:554:25
+      1  100.0%          LazyCompile: ~emitAfterScript node:internal/async_hooks:518:25
+      1  100.0%            LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.1%      LazyCompile: ~digest node:internal/crypto/hash:115:40
+      1  100.0%        Function: ^entitytag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/etag/index.js:39:20
+      1  100.0%          LazyCompile: ~etag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/etag/index.js:70:15
+      1  100.0%            LazyCompile: ~generateETag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/utils.js:272:32
+      1    1.1%      LazyCompile: ~debug node:internal/util/debuglog:76:15
+      1  100.0%        LazyCompile: ~logger node:internal/util/debuglog:95:18
+      1  100.0%          LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    1.1%      LazyCompile: ~debug /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/streamroller/node_modules/debug/src/common.js:66:17
+      1  100.0%        LazyCompile: ~RollingFileWriteStream /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/streamroller/lib/RollingFileWriteStream.js:38:14
+      1  100.0%          LazyCompile: ~RollingFileStream /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/streamroller/lib/RollingFileStream.js:5:14
+      1  100.0%            LazyCompile: ~openTheStream /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/file.js:45:25
+      1    1.1%      LazyCompile: ~debug /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/node_modules/debug/src/common.js:66:17
+      1  100.0%        LazyCompile: ~addListener /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/configuration.js:17:21
+      1  100.0%          Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/levels.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1    1.1%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:137:19
+      1  100.0%          Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/debug/src/node.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1057:37
+      1    1.1%      LazyCompile: ~createAppender /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/index.js:62:24
+      1  100.0%        LazyCompile: ~getAppender /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/index.js:48:21
+      1  100.0%          LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/index.js:112:41
+      1  100.0%            /usr/local/lib/nodejs/bin/node
+      1    1.1%      LazyCompile: ~cors /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:159:16
+      1  100.0%        LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:219:57
+      1  100.0%          LazyCompile: ~originCallback /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:213:39
+      1  100.0%            LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/cors/lib/index.js:204:37
+      1    1.1%      LazyCompile: ~construct node:internal/streams/destroy:225:19
+      1  100.0%        LazyCompile: ~Writable node:internal/streams/writable:219:18
+      1  100.0%          LazyCompile: ~WriteStream node:internal/fs/streams:306:21
+      1  100.0%            LazyCompile: ~WriteStream /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/graceful-fs/graceful-fs.js:301:24
+      1    1.1%      LazyCompile: ~compileFunction node:vm:308:25
+      1  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1    1.1%      LazyCompile: ~colouredLayout /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/layouts.js:71:24
+      1  100.0%        LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/console.js:5:10
+      1  100.0%          LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/logLevelFilter.js:4:10
+      1  100.0%            LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/log4js.js:42:29
+      1    1.1%      LazyCompile: ~callback node:internal/streams/writable:550:44
+      1  100.0%        LazyCompile: ~afterWrite node:internal/streams/writable:487:20
+      1  100.0%          LazyCompile: ~afterWriteTick node:internal/streams/writable:482:24
+      1  100.0%            LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.1%      LazyCompile: ~callFinal node:internal/streams/writable:662:19
+      1  100.0%        LazyCompile: ~prefinish node:internal/streams/writable:719:19
+      1  100.0%          LazyCompile: ~finishMaybe node:internal/streams/writable:731:21
+      1  100.0%            LazyCompile: ~Writable.end node:internal/streams/writable:594:34
+      1    1.1%      LazyCompile: ~cache node:internal/http:26:15
+      1  100.0%        LazyCompile: ~utcDate node:internal/http:21:17
+      1  100.0%          LazyCompile: ~_storeHeader node:_http_outgoing:374:22
+      1  100.0%            LazyCompile: ~writeHead node:_http_server:269:19
+      1    1.1%      LazyCompile: ~assignSocket node:_http_server:239:62
+      1  100.0%        LazyCompile: ~parserOnIncoming node:_http_server:852:26
+      1  100.0%          LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    1.1%      LazyCompile: ~arrayClone node:events:883:20
+      1  100.0%        Function: ^emit node:events:474:44
+      1  100.0%          Function: ^endReadableNT node:internal/streams/readable:1338:23
+      1  100.0%            Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.1%      LazyCompile: ~_storeHeader node:_http_outgoing:374:22
+      1  100.0%        LazyCompile: ~writeHead node:_http_server:269:19
+      1  100.0%          Function: ^writeHead /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/on-headers/index.js:28:29
+      1  100.0%            Function: ^_implicitHeader node:_http_server:264:68
+      1    1.1%      LazyCompile: ~_flushOutput node:_http_outgoing:951:63
+      1  100.0%        LazyCompile: ~_writeRaw node:_http_outgoing:344:19
+      1  100.0%          LazyCompile: ~_send node:_http_outgoing:319:49
+      1  100.0%            LazyCompile: ~write_ node:_http_outgoing:730:16
+      1    1.1%      LazyCompile: ~Writable.write node:internal/streams/writable:333:36
+      1  100.0%        LazyCompile: ~_flushOutput node:_http_outgoing:951:63
+      1  100.0%          LazyCompile: ~_writeRaw node:_http_outgoing:344:19
+      1  100.0%            LazyCompile: ~_send node:_http_outgoing:319:49
+      1    1.1%      LazyCompile: ~Timeout.refresh node:internal/timers:210:37
+      1  100.0%        Function: ^_unrefTimer node:net:417:52
+      1  100.0%          Function: ^onParserExecute node:_http_server:634:25
+      1    1.1%      LazyCompile: ~Socket.resume node:net:630:35
+      1  100.0%        LazyCompile: ~Readable.on node:internal/streams/readable:874:33
+      1  100.0%          LazyCompile: ~connectionListenerInternal node:_http_server:443:36
+      1  100.0%            LazyCompile: ~defaultTriggerAsyncIdScope node:internal/async_hooks:456:36
+      1    1.1%      LazyCompile: ~Socket._destroy node:net:667:37
+      1  100.0%        Function: ^_destroy node:internal/streams/destroy:70:18
+      1  100.0%          Function: ^destroy node:internal/streams/destroy:32:17
+      1  100.0%            LazyCompile: ~finish node:internal/streams/writable:745:16
+      1    1.1%      LazyCompile: ~Server.listen node:net:1410:35
+      1  100.0%        LazyCompile: ~listen /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/application.js:616:29
+      1  100.0%          Script: ~<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/server.js:1:1
+      1  100.0%            /usr/local/lib/nodejs/bin/node
+      1    1.1%      LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%        LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/modules/esm/translators:159:67
+      1    1.1%      LazyCompile: ~Logger /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/logger.js:50:14
+      1  100.0%        LazyCompile: ~getLogger /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/log4js.js:142:19
+      1  100.0%          Script: ~<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/config/log4js_config.js:1:1
+      1  100.0%            /usr/local/lib/nodejs/bin/node
+      1    1.1%      LazyCompile: ~LazyTransform node:internal/streams/lazy_transform:20:23
+      1  100.0%        LazyCompile: ~Hash node:internal/crypto/hash:58:14
+      1  100.0%          LazyCompile: ~createHash node:crypto:129:20
+      1  100.0%            LazyCompile: ~entitytag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/etag/index.js:39:20
+      1    1.1%      LazyCompile: ~IPv4 /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/ipaddr.js/lib/ipaddr.js:57:18
+      1  100.0%        Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/ipaddr.js/lib/ipaddr.js:56:26
+      1  100.0%          Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/ipaddr.js/lib/ipaddr.js:1:10
+      1  100.0%            Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/ipaddr.js/lib/ipaddr.js:1:1
+      1    1.1%      LazyCompile: ~EventEmitter.init node:events:326:29
+      1  100.0%        Function: ^EventEmitter node:events:207:22
+      1  100.0%          LazyCompile: ~Stream node:internal/streams/legacy:10:16
+      1  100.0%            LazyCompile: ~Writable node:internal/streams/writable:219:18
+      1    1.1%      LazyCompile: ~Duplex node:internal/streams/duplex:52:16
+      1  100.0%        LazyCompile: ~Socket node:net:283:16
+      1  100.0%          LazyCompile: ~WriteStream node:tty:85:21
+      1  100.0%            LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1    1.1%      LazyCompile: ~DTRACE_NET_STREAM_END node:internal/dtrace:11:27
+      1  100.0%        LazyCompile: ~Socket.end node:net:608:32
+      1  100.0%          LazyCompile: ~socketOnEnd node:_http_server:602:21
+      1  100.0%            Function: ^emit node:events:474:44
+      1    1.1%      LazyCompile: ~<anonymous> node:internal/validators:154:3
+      1  100.0%        LazyCompile: ~<anonymous> node:internal/url:682:12
+      1  100.0%          LazyCompile: ~get href node:internal/url:734:11
+      1  100.0%            LazyCompile: ~isURLInstance node:internal/url:1492:23
+      1    1.1%      LazyCompile: ~<anonymous> node:internal/fs/utils:668:38
+      1  100.0%        Function: ^<anonymous> node:internal/fs/utils:680:42
+      1  100.0%          LazyCompile: ~statSync node:fs:1530:18
+      1  100.0%            LazyCompile: ~fileExists node:internal/modules/esm/resolve:283:20
+      1    1.1%      LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+      1  100.0%        Function: ^expressInit /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%          LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+      1  100.0%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+      1    1.1%      Function: ~<instance_members_initializer> node:internal/util/iterable_weak_map:17:3
+      1  100.0%        LazyCompile: ~IterableWeakMap node:internal/util/iterable_weak_map:16:1
+      1  100.0%          Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.1%      Function: ~<anonymous> node:os:1:1
+      1  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1  100.0%            Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1    1.1%      Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/graceful-fs/graceful-fs.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.1%      Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/request.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.1%      Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/debug/src/node.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.1%      Function: ^processHeader node:_http_outgoing:501:23
+      1  100.0%        Function: ^_storeHeader node:_http_outgoing:374:22
+      1  100.0%          Function: ^writeHead node:_http_server:269:19
+      1  100.0%            Function: ^writeHead /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/on-headers/index.js:28:29
+
+    133    2.9%  /usr/lib/x86_64-linux-gnu/libc.so.6
+     46   34.6%    /usr/local/lib/nodejs/bin/node
+     10   21.7%      /usr/local/lib/nodejs/bin/node
+      3   30.0%        Function: ^parse /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/content-type/index.js:106:16
+      3  100.0%          Function: ^setCharset /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/utils.js:247:41
+      3  100.0%            Function: ^send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      1   10.0%        LazyCompile: ~parse /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/content-type/index.js:106:16
+      1  100.0%          LazyCompile: ~setCharset /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/utils.js:247:41
+      1  100.0%            LazyCompile: ~send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      1   10.0%        LazyCompile: *header /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:759:29
+      1  100.0%          Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:239:25
+      1  100.0%            Function: ^randoms_nodebug file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/components/randoms/controllers/randomsController.js:5:26
+      1   10.0%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1   10.0%        Function: ^realpathSync node:fs:2412:22
+      1  100.0%          Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1   10.0%        Function: ^getPackageScopeConfig node:internal/modules/esm/resolve:248:31
+      1  100.0%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:875:24
+      1  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:966:23
+      1   10.0%        Function: ^FastBuffer node:internal/buffer:958:14
+      1  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1  100.0%            Function: ^createPool node:buffer:151:20
+      1   10.0%        Function: ^<anonymous> node:internal/fs/utils:357:35
+      1  100.0%          Function: ^<anonymous> node:internal/fs/utils:668:38
+      1  100.0%            Function: ^<anonymous> node:internal/fs/utils:680:42
+      3    6.5%      LazyCompile: ~getStatsFromBinding node:internal/fs/utils:530:29
+      3  100.0%        Function: ^statSync node:fs:1530:18
+      3  100.0%          LazyCompile: ~tryStatSync node:internal/modules/esm/resolve:184:3
+      3  100.0%            LazyCompile: ~finalizeResolution node:internal/modules/esm/resolve:391:28
+      2    4.3%      LazyCompile: ~ModuleJob node:internal/modules/esm/module_job:56:14
+      2  100.0%        LazyCompile: ~#createModuleJob node:internal/modules/esm/loader:278:19
+      2  100.0%          LazyCompile: ~getModuleJob node:internal/modules/esm/loader:242:21
+      2  100.0%            /usr/local/lib/nodejs/bin/node
+      2    4.3%      Function: ^writeHead node:_http_server:269:19
+      2  100.0%        Function: ^writeHead /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/on-headers/index.js:28:29
+      1   50.0%          LazyCompile: *send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      1  100.0%            Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:239:25
+      1   50.0%          Function: ^_implicitHeader node:_http_server:264:68
+      1  100.0%            Function: ^end /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:92:28
+      2    4.3%      Function: ^setHeader node:_http_outgoing:574:57
+      2  100.0%        Function: ^header /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:759:29
+      2  100.0%          Function: ^send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      2  100.0%            Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:239:25
+      1    2.2%      LazyCompile: ~writeOrBuffer node:internal/streams/writable:365:23
+      1  100.0%        LazyCompile: ~_write node:internal/streams/writable:283:16
+      1  100.0%          LazyCompile: ~Writable.write node:internal/streams/writable:333:36
+      1  100.0%            LazyCompile: ~value node:internal/console/constructor:258:20
+      1    2.2%      LazyCompile: ~writeHead /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/on-headers/index.js:28:29
+      1  100.0%        LazyCompile: ~_implicitHeader node:_http_server:264:68
+      1  100.0%          LazyCompile: ~end /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:92:28
+      1  100.0%            LazyCompile: ~send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      1    2.2%      LazyCompile: ~update node:internal/crypto/hash:95:40
+      1  100.0%        Function: ^entitytag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/etag/index.js:39:20
+      1  100.0%          Function: ^etag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/etag/index.js:70:15
+      1  100.0%            Function: ^generateETag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/utils.js:272:32
+      1    2.2%      LazyCompile: ~resolve node:path:1091:10
+      1  100.0%        LazyCompile: ~Module._initPaths node:internal/modules/cjs/loader:1231:29
+      1  100.0%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:414:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1    2.2%      LazyCompile: ~resolve node:internal/modules/esm/loader:509:16
+      1  100.0%        Function: ^getModuleJob node:internal/modules/esm/loader:242:21
+      1  100.0%          Function: ^<anonymous> node:internal/modules/esm/module_job:78:41
+      1  100.0%            /usr/local/lib/nodejs/bin/node
+      1    2.2%      LazyCompile: ~readableAddChunk node:internal/streams/readable:236:26
+      1  100.0%        LazyCompile: ~Readable.push node:internal/streams/readable:227:35
+      1  100.0%          LazyCompile: ~parserOnMessageComplete node:_http_common:147:33
+      1    2.2%      LazyCompile: ~readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%        LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%          LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1    2.2%      LazyCompile: ~processPromiseRejections node:internal/process/promises:211:34
+      1  100.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    2.2%      LazyCompile: ~patch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/graceful-fs/polyfills.js:29:16
+      1  100.0%        LazyCompile: ~patch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/graceful-fs/graceful-fs.js:102:16
+      1  100.0%          Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/graceful-fs/graceful-fs.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1    2.2%      LazyCompile: ~onParseError node:internal/url:551:22
+      1  100.0%        /usr/local/lib/nodejs/bin/node
+      1  100.0%          LazyCompile: ~URL node:internal/url:620:14
+      1  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:966:23
+      1    2.2%      LazyCompile: ~nextTick node:internal/process/task_queues:104:18
+      1  100.0%        LazyCompile: ~construct node:internal/streams/destroy:225:19
+      1  100.0%          LazyCompile: ~Writable node:internal/streams/writable:219:18
+      1  100.0%            LazyCompile: ~WriteStream node:internal/fs/streams:306:21
+      1    2.2%      LazyCompile: ~get node:_http_incoming:108:16
+      1  100.0%        LazyCompile: ~parserOnIncoming node:_http_server:852:26
+      1  100.0%          LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    2.2%      LazyCompile: ~forEachCode /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/http-errors/index.js:265:38
+      1  100.0%        /usr/local/lib/nodejs/bin/node
+      1  100.0%          LazyCompile: ~populateConstructorExports /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/http-errors/index.js:264:37
+      1  100.0%            Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/http-errors/index.js:1:1
+      1    2.2%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:137:19
+      1  100.0%          Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/debug/src/node.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1057:37
+      1    2.2%      LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/application.js:472:25
+      1  100.0%        /usr/local/lib/nodejs/bin/node
+      1  100.0%          Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/application.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1    2.2%      LazyCompile: *_storeHeader node:_http_outgoing:374:22
+      1  100.0%        Function: ^writeHead node:_http_server:269:19
+      1  100.0%          Function: ^writeHead /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/on-headers/index.js:28:29
+      1  100.0%            Function: ^_implicitHeader node:_http_server:264:68
+      1    2.2%      LazyCompile: *_addListener node:events:554:22
+      1  100.0%        Function: ^addListener node:events:622:58
+      1  100.0%          Function: ^Readable.on node:internal/streams/readable:874:33
+      1  100.0%            Function: ^socketListenerWrap node:_http_server:1001:37
+      1    2.2%      Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:internal/fs/promises:1:1
+      1    2.2%      Function: ^shift node:internal/fixed_queue:108:8
+      1  100.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    2.2%      Function: ^resOnFinish node:_http_server:788:21
+      1  100.0%        Function: ^emit node:events:474:44
+      1  100.0%          Function: ^onFinish node:_http_outgoing:828:18
+      1  100.0%            Function: ^callback node:internal/streams/writable:550:44
+      1    2.2%      Function: ^removeAllListeners node:events:753:32
+      1  100.0%        Function: ^Readable.removeAllListeners node:internal/streams/readable:922:49
+      1  100.0%          Function: ^_dump node:_http_incoming:364:49
+      1  100.0%            Function: ^resOnFinish node:_http_server:788:21
+      1    2.2%      Function: ^realpathSync node:fs:2412:22
+      1  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1    2.2%      Function: ^parse /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/content-type/index.js:106:16
+      1  100.0%        Function: ^setCharset /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/utils.js:247:41
+      1  100.0%          Function: ^send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:107:25
+      1  100.0%            Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/response.js:239:25
+      1    2.2%      Function: ^originalurl /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/parseurl/index.js:65:22
+      1  100.0%        Function: ^serveStatic /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/serve-static/index.js:72:31
+      1  100.0%          Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+      1    2.2%      Function: ^error /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:267:45
+      1  100.0%        Function: ^onStatError /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:416:57
+      1  100.0%          Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:732:17
+      1  100.0%            Function: ^onstat /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:721:33
+      1    2.2%      Function: ^compression /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/compression/index.js:59:31
+      1  100.0%        LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+      1  100.0%          LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+      1  100.0%            Function: ^expressInit /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/middleware/init.js:29:30
+      1    2.2%      Function: ^_write node:internal/streams/writable:283:16
+      1  100.0%        Function: ^Writable.write node:internal/streams/writable:333:36
+      1  100.0%          Function: ^_flushOutput node:_http_outgoing:951:63
+      1  100.0%            Function: ^_writeRaw node:_http_outgoing:344:19
+
+    102    2.2%  LazyCompile: *randoms file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/components/randoms/services/randomsService.js:7:18
+    101   99.0%    Function: ^randoms_nodebug file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/components/randoms/controllers/randomsController.js:5:26
+    101  100.0%      Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+    101  100.0%        Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/route.js:114:16
+    101  100.0%          Function: ^dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/route.js:98:45
+    101  100.0%            Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+
+     75    1.6%  epoll_pwait@@GLIBC_2.6
+
+     55    1.2%  fwrite@@GLIBC_2.2.5
+     53   96.4%    /usr/local/lib/nodejs/bin/node
+      6   11.3%      LazyCompile: ~realpathSync node:fs:2412:22
+      6  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      6  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      6  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      5    9.4%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      5  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      5  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      5  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:70:31
+      4    7.5%      LazyCompile: ~createAppender /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/index.js:62:24
+      4  100.0%        LazyCompile: ~getAppender /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/index.js:48:21
+      4  100.0%          LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/index.js:112:41
+      4  100.0%            /usr/local/lib/nodejs/bin/node
+      3    5.7%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:81:28
+      3  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      3  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      3    5.7%      Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      3  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      3  100.0%            Function: ~<anonymous> node:internal/fs/promises:1:1
+      2    3.8%      LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:134:29
+      2  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      2  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    3.8%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      2  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    3.8%      LazyCompile: ~onParseError node:internal/url:551:22
+      2  100.0%        /usr/local/lib/nodejs/bin/node
+      2  100.0%          LazyCompile: ~URL node:internal/url:620:14
+      2  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:966:23
+      2    3.8%      Function: ~<anonymous> node:internal/fs/promises:1:1
+      2  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2  100.0%            Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      2    3.8%      Function: ^fastparse /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/parseurl/index.js:95:20
+      2  100.0%        LazyCompile: ~parseurl /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/parseurl/index.js:35:19
+      2  100.0%          LazyCompile: ~getPathname /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:532:21
+      2  100.0%            LazyCompile: ~next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+      1    1.9%      LazyCompile: ~stringify node:internal/modules/esm/translators:90:19
+      1  100.0%        LazyCompile: ~moduleStrategy node:internal/modules/esm/translators:110:56
+      1  100.0%          LazyCompile: ~moduleProvider node:internal/modules/esm/loader:279:28
+      1  100.0%            /usr/local/lib/nodejs/bin/node
+      1    1.9%      LazyCompile: ~send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/send/index.js:83:15
+      1  100.0%        LazyCompile: ~serveStatic /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/serve-static/index.js:72:31
+      1  100.0%          LazyCompile: ~handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:288:23
+      1    1.9%      LazyCompile: ~readFile node:internal/fs/promises:786:24
+      1  100.0%        /usr/local/lib/nodejs/bin/node
+      1    1.9%      LazyCompile: ~patch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/graceful-fs/graceful-fs.js:102:16
+      1  100.0%        Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/graceful-fs/graceful-fs.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1    1.9%      LazyCompile: ~parseurl /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/parseurl/index.js:35:19
+      1  100.0%        LazyCompile: ~getPathname /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:532:21
+      1  100.0%          LazyCompile: ~next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+      1  100.0%            LazyCompile: ~handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:136:31
+      1    1.9%      LazyCompile: ~parserOnIncoming node:_http_server:852:26
+      1  100.0%        LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    1.9%      LazyCompile: ~nop node:_http_outgoing:86:13
+      1  100.0%        Function: ^callback node:internal/streams/writable:550:44
+      1  100.0%          Function: ^afterWrite node:internal/streams/writable:487:20
+      1  100.0%            Function: ^afterWriteTick node:internal/streams/writable:482:24
+      1    1.9%      LazyCompile: ~nextTick node:internal/process/task_queues:104:18
+      1  100.0%        LazyCompile: ~construct node:internal/streams/destroy:225:19
+      1  100.0%          LazyCompile: ~Writable node:internal/streams/writable:219:18
+      1  100.0%            LazyCompile: ~WriteStream node:internal/fs/streams:306:21
+      1    1.9%      LazyCompile: ~log node:internal/console/constructor:359:6
+      1  100.0%        /usr/local/lib/nodejs/bin/node
+      1  100.0%          LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/console.js:5:10
+      1  100.0%            LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/logLevelFilter.js:4:10
+      1    1.9%      LazyCompile: ~getPathname /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:532:21
+      1  100.0%        LazyCompile: ~next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/index.js:176:16
+      1  100.0%          LazyCompile: ~urlencodedParser /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/body-parser/lib/types/urlencoded.js:79:36
+      1  100.0%            LazyCompile: ~handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/router/layer.js:86:49
+      1    1.9%      LazyCompile: ~format node:internal/util/inspect:2020:16
+      1  100.0%        LazyCompile: ~timestampLevelAndCategory /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/layouts.js:42:35
+      1  100.0%          LazyCompile: ~colouredLayout /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/layouts.js:71:24
+      1  100.0%            LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/log4js/lib/appenders/console.js:5:10
+      1    1.9%      LazyCompile: ~createHttpErrorConstructor /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/http-errors/index.js:118:37
+      1  100.0%        Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/http-errors/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1    1.9%      LazyCompile: ~createHash node:crypto:129:20
+      1  100.0%        LazyCompile: ~entitytag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/etag/index.js:39:20
+      1  100.0%          LazyCompile: ~etag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/etag/index.js:70:15
+      1  100.0%            LazyCompile: ~generateETag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/express/lib/utils.js:272:32
+      1    1.9%      LazyCompile: ~Timeout.refresh node:internal/timers:210:37
+      1  100.0%        Function: ^_unrefTimer node:net:417:52
+      1  100.0%          Function: ^onParserExecute node:_http_server:634:25
+      1    1.9%      LazyCompile: ~Socket._writeGeneric node:net:769:42
+      1  100.0%        LazyCompile: ~Socket._write node:net:806:35
+      1  100.0%          LazyCompile: ~writeOrBuffer node:internal/streams/writable:365:23
+      1  100.0%            LazyCompile: ~_write node:internal/streams/writable:283:16
+      1    1.9%      LazyCompile: ~Readable.read node:internal/streams/readable:394:35
+      1  100.0%        LazyCompile: ~Socket.read node:net:639:33
+      1  100.0%          LazyCompile: ~Socket node:net:283:16
+      1  100.0%            LazyCompile: ~onconnection node:net:1544:22
+      1    1.9%      LazyCompile: ~<anonymous> node:internal/modules/esm/loader:333:15
+      1    1.9%      LazyCompile: ~<anonymous> node:internal/fs/utils:357:35
+      1  100.0%        LazyCompile: ~<anonymous> node:internal/fs/utils:668:38
+      1  100.0%          LazyCompile: ~realpathSync node:fs:2412:22
+      1  100.0%            LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1    1.9%      LazyCompile: ~#createModuleJob node:internal/modules/esm/loader:278:19
+      1  100.0%        LazyCompile: ~getModuleJob node:internal/modules/esm/loader:242:21
+      1  100.0%          /usr/local/lib/nodejs/bin/node
+      1    1.9%      Function: ~<anonymous> node:internal/modules/cjs/helpers:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1    1.9%      Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.9%      Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_profile/node_modules/fs-extra/lib/mkdirs/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+

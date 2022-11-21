@@ -1,0 +1,484 @@
+Statistical profiling result from fork-v8.log, (29721 ticks, 7 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   9354   31.5%          /usr/local/lib/nodejs/bin/node
+    128    0.4%          /usr/lib/x86_64-linux-gnu/libc.so.6
+      7    0.0%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+      2    0.0%          [vdso]
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+  19642   66.1%   97.1%  LazyCompile: *<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/routes/index.js:26:18
+     15    0.1%    0.1%  LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:176:16
+      8    0.0%    0.0%  LazyCompile: *normalizeString node:path:66:25
+      6    0.0%    0.0%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      5    0.0%    0.0%  LazyCompile: *join node:path:1166:7
+      4    0.0%    0.0%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      4    0.0%    0.0%  LazyCompile: *isPrime file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/routes/index.js:8:17
+      4    0.0%    0.0%  LazyCompile: *header /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:759:29
+      4    0.0%    0.0%  LazyCompile: *_storeHeader node:_http_outgoing:374:22
+      4    0.0%    0.0%  Function: ^_write node:internal/streams/writable:283:16
+      3    0.0%    0.0%  RegExp: ^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$
+      3    0.0%    0.0%  LazyCompile: *normalize node:path:1127:12
+      3    0.0%    0.0%  LazyCompile: *emit node:events:474:44
+      3    0.0%    0.0%  LazyCompile: *_addListener node:events:554:22
+      3    0.0%    0.0%  Function: ^endReadableNT node:internal/streams/readable:1338:23
+      3    0.0%    0.0%  Function: ^emitReadable_ node:internal/streams/readable:574:23
+      3    0.0%    0.0%  Function: ^emit node:events:474:44
+      3    0.0%    0.0%  Function: ^compression /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/compression/index.js:59:31
+      3    0.0%    0.0%  Function: ^_destroy node:internal/streams/destroy:70:18
+      3    0.0%    0.0%  Function: ^_destroy node:_http_incoming:176:55
+      3    0.0%    0.0%  Function: ^Readable.read node:internal/streams/readable:394:35
+      3    0.0%    0.0%  Function: ^<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/routes/index.js:26:18
+      2    0.0%    0.0%  RegExp: ^text\/|^application\/(javascript|json)
+      2    0.0%    0.0%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      2    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      2    0.0%    0.0%  RegExp: ;\s*charset\s*=
+      2    0.0%    0.0%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      2    0.0%    0.0%  LazyCompile: *handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+      2    0.0%    0.0%  LazyCompile: *getPathFromURLPosix node:internal/url:1395:29
+      2    0.0%    0.0%  Function: ^write_ node:_http_outgoing:730:16
+      2    0.0%    0.0%  Function: ^writeOrBuffer node:internal/streams/writable:365:23
+      2    0.0%    0.0%  Function: ^writeHead node:_http_server:269:19
+      2    0.0%    0.0%  Function: ^urlencodedParser /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/body-parser/lib/types/urlencoded.js:79:36
+      2    0.0%    0.0%  Function: ^setStreamTimeout node:internal/stream_base_commons:237:26
+      2    0.0%    0.0%  Function: ^send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:107:25
+      2    0.0%    0.0%  Function: ^processPromiseRejections node:internal/process/promises:211:34
+      2    0.0%    0.0%  Function: ^normalizeParseOptions /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/qs/lib/parse.js:203:59
+      2    0.0%    0.0%  Function: ^nextTick node:internal/process/task_queues:104:18
+      2    0.0%    0.0%  Function: ^get node:internal/streams/writable:787:8
+      2    0.0%    0.0%  Function: ^error /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/serve-static/index.js:115:39
+      2    0.0%    0.0%  Function: ^dirname node:path:1275:10
+      2    0.0%    0.0%  Function: ^cors /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/cors/lib/index.js:159:16
+      2    0.0%    0.0%  Function: ^Socket._writeGeneric node:net:769:42
+      2    0.0%    0.0%  Function: ^Readable node:internal/streams/readable:181:18
+      2    0.0%    0.0%  Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/cors/lib/index.js:204:37
+      1    0.0%    0.0%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      1    0.0%    0.0%  RegExp: (\[[^[\]]*])
+      1    0.0%    0.0%  LazyCompile: *writeHead node:_http_server:269:19
+      1    0.0%    0.0%  LazyCompile: *setHeader node:_http_outgoing:574:57
+      1    0.0%    0.0%  LazyCompile: *resolve node:path:1091:10
+      1    0.0%    0.0%  LazyCompile: *parserOnHeadersComplete node:_http_common:77:33
+      1    0.0%    0.0%  LazyCompile: *handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:136:31
+      1    0.0%    0.0%  LazyCompile: *getHeader node:_http_outgoing:590:57
+      1    0.0%    0.0%  LazyCompile: *get node:_http_incoming:108:16
+      1    0.0%    0.0%  LazyCompile: *SendStream /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/send/index.js:96:21
+      1    0.0%    0.0%  Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      1    0.0%    0.0%  Function: ^socketOnDrain node:_http_server:559:23
+      1    0.0%    0.0%  Function: ^socketListenerWrap node:_http_server:1001:37
+      1    0.0%    0.0%  Function: ^setHeader node:_http_outgoing:574:57
+      1    0.0%    0.0%  Function: ^serveStatic /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/serve-static/index.js:72:31
+      1    0.0%    0.0%  Function: ^resume_ node:internal/streams/readable:984:17
+      1    0.0%    0.0%  Function: ^resolve node:path:1091:10
+      1    0.0%    0.0%  Function: ^resOnFinish node:_http_server:788:21
+      1    0.0%    0.0%  Function: ^removeListener node:events:693:28
+      1    0.0%    0.0%  Function: ^preferredEncodings /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/negotiator/lib/encoding.js:138:28
+      1    0.0%    0.0%  Function: ^parseQueryStringValues /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/qs/lib/parse.js:50:50
+      1    0.0%    0.0%  Function: ^parseQueryStringKeys /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/qs/lib/parse.js:149:46
+      1    0.0%    0.0%  Function: ^parseObject /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/qs/lib/parse.js:114:28
+      1    0.0%    0.0%  Function: ^parse /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/content-type/index.js:106:16
+      1    0.0%    0.0%  Function: ^originalurl /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/parseurl/index.js:65:22
+      1    0.0%    0.0%  Function: ^onStatError /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/send/index.js:416:57
+      1    0.0%    0.0%  Function: ^onResponseHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/compression/index.js:140:47
+      1    0.0%    0.0%  Function: ^onDestroy node:internal/streams/destroy:73:21
+      1    0.0%    0.0%  Function: ^normalizeEncoding node:internal/util:160:27
+      1    0.0%    0.0%  Function: ^noop node:internal/util/debuglog:47:14
+      1    0.0%    0.0%  Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/send/index.js:761:17
+      1    0.0%    0.0%  Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:114:16
+      1    0.0%    0.0%  Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:239:25
+      1    0.0%    0.0%  Function: ^isFileType node:fs:205:20
+      1    0.0%    0.0%  Function: ^howMuchToRead node:internal/streams/readable:377:23
+      1    0.0%    0.0%  Function: ^getOwn node:internal/bootstrap/loaders:180:16
+      1    0.0%    0.0%  Function: ^getObserverType node:internal/perf/observe:117:25
+      1    0.0%    0.0%  Function: ^getDefaultTriggerAsyncId node:internal/async_hooks:433:34
+      1    0.0%    0.0%  Function: ^get pathname node:internal/url:875:15
+      1    0.0%    0.0%  Function: ^get node:internal/streams/readable:1270:8
+      1    0.0%    0.0%  Function: ^get node:internal/streams/duplex:94:8
+      1    0.0%    0.0%  Function: ^fromString node:buffer:432:20
+      1    0.0%    0.0%  Function: ^format /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/content-type/index.js:65:17
+      1    0.0%    0.0%  Function: ^end node:_http_outgoing:833:45
+      1    0.0%    0.0%  Function: ^encodings /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/negotiator/index.js:52:52
+      1    0.0%    0.0%  Function: ^emitCloseNT node:internal/streams/destroy:126:21
+      1    0.0%    0.0%  Function: ^dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:98:45
+      1    0.0%    0.0%  Function: ^destroy node:internal/streams/destroy:32:17
+      1    0.0%    0.0%  Function: ^decode node:internal/encoding:408:11
+      1    0.0%    0.0%  Function: ^corsMiddleware /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/cors/lib/index.js:203:35
+      1    0.0%    0.0%  Function: ^construct node:internal/streams/destroy:225:19
+      1    0.0%    0.0%  Function: ^clearTimeout node:timers:184:22
+      1    0.0%    0.0%  Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      1    0.0%    0.0%  Function: ^callback node:internal/streams/writable:550:44
+      1    0.0%    0.0%  Function: ^applyHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/cors/lib/index.js:144:24
+      1    0.0%    0.0%  Function: ^append /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/vary/index.js:38:17
+      1    0.0%    0.0%  Function: ^app.<computed> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/application.js:473:25
+      1    0.0%    0.0%  Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      1    0.0%    0.0%  Function: ^afterWrite node:internal/streams/writable:487:20
+      1    0.0%    0.0%  Function: ^_storeHeader node:_http_outgoing:374:22
+      1    0.0%    0.0%  Function: ^_flushOutput node:_http_outgoing:951:63
+      1    0.0%    0.0%  Function: ^_addListener node:events:554:22
+      1    0.0%    0.0%  Function: ^ServerResponse node:_http_server:178:24
+      1    0.0%    0.0%  Function: ^IncomingMessage node:_http_incoming:51:25
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:154:3
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:668:38
+
+ [C++]:
+   ticks  total  nonlib   name
+    150    0.5%    0.7%  __write@@GLIBC_2.2.5
+     70    0.2%    0.3%  fwrite@@GLIBC_2.2.5
+     26    0.1%    0.1%  pthread_cond_signal@@GLIBC_2.3.2
+     17    0.1%    0.1%  epoll_pwait@@GLIBC_2.6
+     14    0.0%    0.1%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     14    0.0%    0.1%  __libc_malloc@@GLIBC_2.2.5
+     11    0.0%    0.1%  _IO_file_xsputn@@GLIBC_2.2.5
+      9    0.0%    0.0%  __read@@GLIBC_2.2.5
+      8    0.0%    0.0%  __mprotect@@GLIBC_PRIVATE
+      7    0.0%    0.0%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      4    0.0%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      4    0.0%    0.0%  __pthread_mutex_unlock@GLIBC_2.2.5
+      4    0.0%    0.0%  __pthread_mutex_lock@GLIBC_2.2.5
+      3    0.0%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      3    0.0%    0.0%  cfree@GLIBC_2.2.5
+      3    0.0%    0.0%  __pthread_getspecific@GLIBC_2.2.5
+      3    0.0%    0.0%  __mmap@@GLIBC_PRIVATE
+      2    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const@@GLIBCXX_3.4.18
+      2    0.0%    0.0%  shutdown@@GLIBC_2.2.5
+      2    0.0%    0.0%  operator delete[](void*)@@GLIBCXX_3.4
+      2    0.0%    0.0%  getrusage@@GLIBC_2.2.5
+      2    0.0%    0.0%  fputc@@GLIBC_2.2.5
+      2    0.0%    0.0%  __pthread_rwlock_wrlock@GLIBC_2.2.5
+      2    0.0%    0.0%  __lll_lock_wait_private@@GLIBC_PRIVATE
+      1    0.0%    0.0%  syscall@@GLIBC_2.2.5
+      1    0.0%    0.0%  std::ostream::operator<<(int)@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::ostream::flush()@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const@@GLIBCXX_3.4.18
+      1    0.0%    0.0%  std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.0%    0.0%  sigemptyset@@GLIBC_2.2.5
+      1    0.0%    0.0%  readlink@@GLIBC_2.2.5
+      1    0.0%    0.0%  operator new(unsigned long)@@GLIBCXX_3.4
+      1    0.0%    0.0%  fflush@@GLIBC_2.2.5
+      1    0.0%    0.0%  epoll_ctl@@GLIBC_2.3.2
+      1    0.0%    0.0%  __pthread_rwlock_unlock@GLIBC_2.2.5
+      1    0.0%    0.0%  __pthread_rwlock_tryrdlock@GLIBC_2.2.5
+
+ [Summary]:
+   ticks  total  nonlib   name
+  19844   66.8%   98.1%  JavaScript
+    379    1.3%    1.9%  C++
+    347    1.2%    1.7%  GC
+   9491   31.9%          Shared libraries
+      7    0.0%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     96   40.0%    0.3%  __write@@GLIBC_2.2.5
+     64   26.7%    0.2%  fwrite@@GLIBC_2.2.5
+     13    5.4%    0.0%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     11    4.6%    0.0%  __libc_malloc@@GLIBC_2.2.5
+     10    4.2%    0.0%  _IO_file_xsputn@@GLIBC_2.2.5
+      7    2.9%    0.0%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      4    1.7%    0.0%  __pthread_mutex_lock@GLIBC_2.2.5
+      4    1.7%    0.0%  __mprotect@@GLIBC_PRIVATE
+      3    1.3%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      3    1.3%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      3    1.3%    0.0%  __pthread_mutex_unlock@GLIBC_2.2.5
+      2    0.8%    0.0%  operator delete[](void*)@@GLIBCXX_3.4
+      2    0.8%    0.0%  fputc@@GLIBC_2.2.5
+      2    0.8%    0.0%  cfree@GLIBC_2.2.5
+      2    0.8%    0.0%  __pthread_rwlock_wrlock@GLIBC_2.2.5
+      1    0.4%    0.0%  syscall@@GLIBC_2.2.5
+      1    0.4%    0.0%  std::ostream::operator<<(int)@@GLIBCXX_3.4
+      1    0.4%    0.0%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      1    0.4%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const@@GLIBCXX_3.4.18
+      1    0.4%    0.0%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const@@GLIBCXX_3.4.18
+      1    0.4%    0.0%  std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.4%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.4%    0.0%  std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.4%    0.0%  pthread_cond_signal@@GLIBC_2.3.2
+      1    0.4%    0.0%  operator new(unsigned long)@@GLIBCXX_3.4
+      1    0.4%    0.0%  fflush@@GLIBC_2.2.5
+      1    0.4%    0.0%  __pthread_rwlock_unlock@GLIBC_2.2.5
+      1    0.4%    0.0%  __pthread_rwlock_tryrdlock@GLIBC_2.2.5
+      1    0.4%    0.0%  __pthread_getspecific@GLIBC_2.2.5
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  19642   66.1%  LazyCompile: *<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/routes/index.js:26:18
+  15721   80.0%    LazyCompile: *handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+  15721  100.0%      Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:114:16
+  15721  100.0%        Function: ^dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:98:45
+  15721  100.0%          LazyCompile: *handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+  15721  100.0%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:176:16
+   3911   19.9%    Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+   3767   96.3%      Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:114:16
+   3767  100.0%        Function: ^dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:98:45
+   3767  100.0%          Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+   2441   64.8%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:176:16
+   1326   35.2%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:275:64
+    144    3.7%      LazyCompile: ~next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:114:16
+     83   57.6%        LazyCompile: ~dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:98:45
+     83  100.0%          Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+     76   91.6%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:275:64
+      7    8.4%            LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:275:64
+     61   42.4%        Function: ^dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:98:45
+     61  100.0%          Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+     61  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:275:64
+
+   9354   31.5%  /usr/local/lib/nodejs/bin/node
+   3864   41.3%    /usr/local/lib/nodejs/bin/node
+   1084   28.1%      Function: ^stringify /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:1123:20
+   1084  100.0%        Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:239:25
+   1084  100.0%          LazyCompile: *<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/routes/index.js:26:18
+    888   81.9%            LazyCompile: *handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+    196   18.1%            Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+    290    7.5%      Function: ^update node:internal/crypto/hash:95:40
+    290  100.0%        Function: ^entitytag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/etag/index.js:39:20
+    290  100.0%          Function: ^etag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/etag/index.js:70:15
+    290  100.0%            Function: ^generateETag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/utils.js:272:32
+    252    6.5%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+    250   99.2%        Function: ^Socket._writeGeneric node:net:769:42
+    250  100.0%          Function: ^Socket._writev node:net:801:36
+    250  100.0%            Function: ^doWrite node:internal/streams/writable:398:17
+    212    5.5%      Function: ^fromStringFast node:buffer:413:24
+    212  100.0%        Function: ^fromString node:buffer:432:20
+    204   96.2%          Function: ^from node:buffer:296:28
+    204  100.0%            Function: ^send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:107:25
+      8    3.8%          LazyCompile: ~from node:buffer:296:28
+      8  100.0%            Function: ^send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:107:25
+    159    4.1%      Function: ^compileFunction node:vm:308:25
+    149   93.7%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+    147   98.7%          Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+    113   76.9%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+     34   23.1%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      2    1.3%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1057:37
+      2  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+     10    6.3%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+     10  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1057:37
+     10  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+    141    3.6%      /usr/local/lib/nodejs/bin/node
+     34   24.1%        Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/cors/lib/index.js:204:37
+     34  100.0%          Function: ^optionsCallback /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/cors/lib/index.js:198:34
+     34  100.0%            Function: ^corsMiddleware /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/cors/lib/index.js:203:35
+     11    7.8%        LazyCompile: *header /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:759:29
+     10   90.9%          Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:239:25
+     10  100.0%            LazyCompile: *<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/routes/index.js:26:18
+      1    9.1%          Function: ^send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:107:25
+      1  100.0%            Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:239:25
+     10    7.1%        Function: ^header /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:759:29
+      7   70.0%          Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:239:25
+      7  100.0%            LazyCompile: *<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/routes/index.js:26:18
+      3   30.0%          Function: ^send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:107:25
+      3  100.0%            Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:239:25
+     10    7.1%        Function: ^format /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/content-type/index.js:65:17
+     10  100.0%          Function: ^setCharset /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/utils.js:247:41
+     10  100.0%            Function: ^send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:107:25
+      7    5.0%        Function: ^pipe /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/send/index.js:510:43
+      7  100.0%          Function: ^serveStatic /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/serve-static/index.js:72:31
+      4   57.1%            Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+      2   28.6%            LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:288:23
+      1   14.3%            LazyCompile: *handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+      7    5.0%        Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      7  100.0%          Function: ^<anonymous> node:_http_outgoing:564:45
+      7  100.0%            Function: ^setHeader node:_http_outgoing:574:57
+      5    3.5%        Function: ^parseQueryStringValues /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/qs/lib/parse.js:50:50
+      5  100.0%          Function: ^module.exports /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/qs/lib/parse.js:237:27
+      5  100.0%            Function: ^parseExtendedQueryString /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/utils.js:288:34
+      5    3.5%        Function: ^parseAcceptEncoding /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/negotiator/lib/encoding.js:31:29
+      5  100.0%          Function: ^preferredEncodings /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/negotiator/lib/encoding.js:138:28
+      5  100.0%            Function: ^encodings /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/negotiator/index.js:52:52
+      4    2.8%        Function: ^parse /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/content-type/index.js:106:16
+      4  100.0%          Function: ^setCharset /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/utils.js:247:41
+      4  100.0%            Function: ^send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:107:25
+      3    2.1%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:488:36
+      3  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:553:30
+      3  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:553:30
+      3    2.1%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      2   66.7%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      2  100.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1   33.3%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      3    2.1%        Function: ^normalize node:path:1127:12
+      3  100.0%          Function: ^join node:path:1166:7
+      2   66.7%            Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/send/index.js:761:17
+      1   33.3%            Function: ^pipe /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/send/index.js:510:43
+      3    2.1%        Function: ^expressInit /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/middleware/init.js:29:30
+      3  100.0%          LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:288:23
+      3  100.0%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:176:16
+      2    1.4%        Function: ^FastBuffer node:internal/buffer:958:14
+      2  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1   50.0%            Function: ^createPool node:buffer:151:20
+      1   50.0%            Function: ^allocate node:buffer:398:18
+    124    3.2%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+    107   86.3%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+     21   19.6%          Function: ~<anonymous> node:crypto:1:1
+     21  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     15   14.0%          Function: ~<anonymous> node:internal/child_process:1:1
+     15  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     14   13.1%          Function: ~<anonymous> node:http:1:1
+     14  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7    6.5%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7    6.5%          Function: ~<anonymous> node:_http_client:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5    4.7%          LazyCompile: ~initCJSParse node:internal/modules/esm/translators:58:28
+      5  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:146:60
+      5    4.7%          Function: ~<anonymous> node:child_process:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    3.7%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      4  100.0%            LazyCompile: ~get node:crypto:287:8
+      4    3.7%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    3.7%          Function: ~<anonymous> node:assert:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    2.8%          LazyCompile: ~lazyLoadStreams node:fs:2845:25
+      3  100.0%            LazyCompile: ~get ReadStream node:fs:2988:17
+      2    1.9%          LazyCompile: ~lookupAndListen node:net:1509:25
+      2  100.0%            LazyCompile: ~Server.listen node:net:1410:35
+      2    1.9%          LazyCompile: ~get BlockList node:net:1775:16
+      2  100.0%            /usr/local/lib/nodejs/bin/node
+      2    1.9%          Function: ~<anonymous> node:tty:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    1.9%          Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    1.9%          Function: ~<anonymous> node:dns:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    1.9%          Function: ~<anonymous> node:cluster:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    1.9%          Function: ~<anonymous> node:_http_common:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     14   11.3%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      7   50.0%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:44:26
+      7  100.0%            LazyCompile: ~builtinStrategy node:internal/modules/esm/translators:252:58
+      7   50.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      6   85.7%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1   14.3%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      3    2.4%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      3  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      3  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     68    1.8%      Function: ^stat node:fs:1454:14
+     68  100.0%        Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/send/index.js:761:17
+     68  100.0%          Function: ^sendIndex /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/send/index.js:757:53
+     68  100.0%            Function: ^pipe /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/send/index.js:510:43
+     68    1.8%      Function: ^compression /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/compression/index.js:59:31
+     41   60.3%        LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:288:23
+     41  100.0%          LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:176:16
+     41  100.0%            Function: ^expressInit /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/middleware/init.js:29:30
+     16   23.5%        Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+     16  100.0%          Function: ^trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:288:23
+     10   62.5%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:176:16
+      6   37.5%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:275:64
+     11   16.2%        LazyCompile: *handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+     11  100.0%          Function: ^trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:288:23
+     11  100.0%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:176:16
+     56    1.4%      Function: ^Hash node:internal/crypto/hash:58:14
+     56  100.0%        Function: ^createHash node:crypto:129:20
+     56  100.0%          Function: ^entitytag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/etag/index.js:39:20
+     56  100.0%            Function: ^etag /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/etag/index.js:70:15
+     55    1.4%      LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:176:16
+     36   65.5%        Function: ^cors /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/cors/lib/index.js:159:16
+     36  100.0%          Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/cors/lib/index.js:219:57
+     36  100.0%            Function: ^originCallback /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/cors/lib/index.js:213:39
+      9   16.4%        Function: ^error /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/serve-static/index.js:115:39
+      7   77.8%          LazyCompile: *emit node:events:474:44
+      7  100.0%            Function: ^error /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/send/index.js:267:45
+      2   22.2%          Function: ^emit node:events:474:44
+      2  100.0%            Function: ^error /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/send/index.js:267:45
+      6   10.9%        Function: ^jsonParser /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/body-parser/lib/types/json.js:98:30
+      4   66.7%          LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:288:23
+      4  100.0%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:176:16
+      1   16.7%          LazyCompile: *handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:288:23
+      1   16.7%          Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:288:23
+      2    3.6%        Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:136:31
+      2  100.0%          Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/application.js:158:29
+      2  100.0%            Function: ^app /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/express.js:38:21
+      1    1.8%        Function: ^query /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/middleware/query.js:39:24
+      1  100.0%          LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:288:23
+      1  100.0%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:176:16
+      1    1.8%        Function: ^compression /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/compression/index.js:59:31
+      1  100.0%          LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:288:23
+      1  100.0%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:176:16
+     53    1.4%      LazyCompile: *<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/routes/index.js:26:18
+     40   75.5%        LazyCompile: *handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+     40  100.0%          Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:114:16
+     40  100.0%            Function: ^dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:98:45
+     13   24.5%        Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+     13  100.0%          Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:114:16
+     13  100.0%            Function: ^dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:98:45
+     44    1.1%      Function: ^<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/routes/index.js:26:18
+     36   81.8%        Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+     36  100.0%          LazyCompile: ~next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:114:16
+     36  100.0%            LazyCompile: ~dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:98:45
+      8   18.2%        LazyCompile: ~handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+      8  100.0%          LazyCompile: ~next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:114:16
+      8  100.0%            LazyCompile: ~dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:98:45
+     43    1.1%      Function: ^parse /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/content-type/index.js:106:16
+     43  100.0%        Function: ^setCharset /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/utils.js:247:41
+     43  100.0%          Function: ^send /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:107:25
+     43  100.0%            Function: ^json /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/response.js:239:25
+     41    1.1%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     41  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      9   22.0%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      9  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7   17.1%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:414:29
+      7  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      6   14.6%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      6  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    9.8%          Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    7.3%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    4.9%          Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    4.9%          Function: ~<anonymous> node:internal/fs/promises:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.4%          LazyCompile: ~initializeSourceMapsHandlers node:internal/bootstrap/pre_execution:453:38
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1    2.4%          LazyCompile: ~initializeReport node:internal/bootstrap/pre_execution:175:26
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1    2.4%          Function: ~<anonymous> node:internal/modules/esm/translators:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.4%          Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.4%          Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.4%          Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.4%          Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.4%          Function: ~<anonymous> node:internal/bootstrap/pre_execution:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     41    1.1%      Function: ^setWriteHeadHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/on-headers/index.js:105:30
+     41  100.0%        Function: ^writeHead /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/on-headers/index.js:28:29
+     41  100.0%          Function: ^_implicitHeader node:_http_server:264:68
+     41  100.0%            Function: ^end /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/compression/index.js:92:28
+   3632   38.8%    LazyCompile: *<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/routes/index.js:26:18
+   2936   80.8%      LazyCompile: *handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+   2936  100.0%        Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:114:16
+   2936  100.0%          Function: ^dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:98:45
+   2936  100.0%            LazyCompile: *handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+    695   19.1%      Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+    662   95.3%        Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:114:16
+    662  100.0%          Function: ^dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:98:45
+    662  100.0%            Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+     33    4.7%        LazyCompile: ~next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:114:16
+     19   57.6%          LazyCompile: ~dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:98:45
+     19  100.0%            Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+     14   42.4%          Function: ^dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:98:45
+     14  100.0%            Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+    225    2.4%    LazyCompile: *handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+    220   97.8%      Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:114:16
+    220  100.0%        Function: ^dispatch /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/route.js:98:45
+    220  100.0%          LazyCompile: *handle /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/layer.js:86:49
+    220  100.0%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:176:16
+      3    1.3%      LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/express/lib/router/index.js:176:16
+      3  100.0%        Function: ^cors /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/cors/lib/index.js:159:16
+      3  100.0%          Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/cors/lib/index.js:219:57
+      3  100.0%            Function: ^originCallback /home/echevalier/Devel/Coder/Backend/backend_clase16/practicas_artillery/node_modules/cors/lib/index.js:213:39
+

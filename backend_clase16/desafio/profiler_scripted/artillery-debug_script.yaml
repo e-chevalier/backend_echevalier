@@ -1,0 +1,16 @@
+config:
+  target: "https://localhost:8080"
+  tls:
+    rejectUnauthorized: false
+  phases:
+    - name: "Create 50 VUsers"
+      duration: 60
+      arrivalCount: 50
+
+scenarios:
+  - name: "/api/info With Console.log"
+    flow:
+      - loop:
+          - get:
+              url: "/api/info?verbose=1"
+        count: 20

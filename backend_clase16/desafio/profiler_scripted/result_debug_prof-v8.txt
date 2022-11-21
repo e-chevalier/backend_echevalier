@@ -1,0 +1,1139 @@
+Statistical profiling result from isolate-debug-v8.log, (18918 ticks, 33 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+  13588   71.8%          /usr/local/lib/nodejs/bin/node
+    546    2.9%          /usr/lib/x86_64-linux-gnu/libc.so.6
+     32    0.2%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+     13    0.1%          [vdso]
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+    104    0.5%    2.2%  LazyCompile: *resolve node:path:1091:10
+     80    0.4%    1.7%  LazyCompile: *parse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+     39    0.2%    0.8%  LazyCompile: *wrap /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:101:22
+     38    0.2%    0.8%  LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+     34    0.2%    0.7%  LazyCompile: *normalizeString node:path:66:25
+     28    0.1%    0.6%  LazyCompile: *join node:path:1166:7
+     27    0.1%    0.6%  LazyCompile: *step /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+     25    0.1%    0.5%  LazyCompile: *readPackage node:internal/modules/cjs/loader:290:21
+     25    0.1%    0.5%  LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:167:47
+     21    0.1%    0.4%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+     15    0.1%    0.3%  LazyCompile: *SourceNode_walk /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/source-map/lib/source-node.js:221:53
+     13    0.1%    0.3%  RegExp: [ \t]+$
+     12    0.1%    0.3%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~]))
+     12    0.1%    0.3%  LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/router/index.js:176:16
+     11    0.1%    0.2%  RegExp: \r?\n\s*?$
+     11    0.1%    0.2%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+     11    0.1%    0.2%  LazyCompile: *Glob._process /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:295:36
+     10    0.1%    0.2%  LazyCompile: *compile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     10    0.1%    0.2%  LazyCompile: *anonymous /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+     10    0.1%    0.2%  LazyCompile: *__generator /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:27:58
+     10    0.1%    0.2%  LazyCompile: *WhitespaceControl.Program /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:19:48
+     10    0.1%    0.2%  LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/source-map/lib/source-node.js:174:29
+      9    0.0%    0.2%  RegExp: (?:\r\n?|\n).*
+      9    0.0%    0.2%  LazyCompile: *makeAbs /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/common.js:199:18
+      9    0.0%    0.2%  LazyCompile: *emit node:events:474:44
+      9    0.0%    0.2%  LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:368:47
+      9    0.0%    0.2%  LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+      8    0.0%    0.2%  RegExp: ^(?:[^\x00]*?(?=(\{\{)))
+      8    0.0%    0.2%  LazyCompile: *realpathSync node:fs:2412:22
+      8    0.0%    0.2%  LazyCompile: *dirname node:path:1275:10
+      7    0.0%    0.1%  LazyCompile: *preparePath /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:63:21
+      7    0.0%    0.1%  LazyCompile: *formatRaw node:internal/util/inspect:820:19
+      7    0.0%    0.1%  LazyCompile: *castChunk /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:52:19
+      6    0.0%    0.1%  LazyCompile: *extend /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/utils.js:28:16
+      6    0.0%    0.1%  Function: ^compileFunction node:vm:308:25
+      5    0.0%    0.1%  RegExp: \u001b\[\d\d?m
+      5    0.0%    0.1%  LazyCompile: *template /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/runtime.js:52:18
+      5    0.0%    0.1%  LazyCompile: *reduceToSingleString node:internal/util/inspect:1902:30
+      5    0.0%    0.1%  LazyCompile: *parse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/minimatch/minimatch.js:296:16
+      5    0.0%    0.1%  LazyCompile: *normalize node:path:1127:12
+      5    0.0%    0.1%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      5    0.0%    0.1%  LazyCompile: *SourceNode_add /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/source-map/lib/source-node.js:172:51
+      5    0.0%    0.1%  LazyCompile: *Glob._processReaddir2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:372:44
+      5    0.0%    0.1%  LazyCompile: *ExpressHandlebars.getTemplate /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:162:56
+      5    0.0%    0.1%  Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      4    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\/)
+      4    0.0%    0.1%  RegExp: ^(?:([^\s!"#%-,\.\/;->@\[-\^`\{-~]+(?=([=~}\s\/.)|]))))
+      4    0.0%    0.1%  LazyCompile: *wrapper /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/wrappy/wrappy.js:19:19
+      4    0.0%    0.1%  LazyCompile: *toString node:buffer:783:46
+      4    0.0%    0.1%  LazyCompile: *replaceStack /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:892:38
+      4    0.0%    0.1%  LazyCompile: *opcode /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:347:26
+      4    0.0%    0.1%  LazyCompile: *groupArrayElements node:internal/util/inspect:1338:28
+      4    0.0%    0.1%  LazyCompile: *getPathFromURLPosix node:internal/url:1395:29
+      4    0.0%    0.1%  LazyCompile: *getEncodingOps node:buffer:679:24
+      4    0.0%    0.1%  LazyCompile: *fastparse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/parseurl/index.js:95:20
+      4    0.0%    0.1%  LazyCompile: *basename node:path:1306:11
+      4    0.0%    0.1%  LazyCompile: *Module._resolveLookupPaths node:internal/modules/cjs/loader:667:38
+      4    0.0%    0.1%  LazyCompile: *Glob._readdir /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:522:36
+      4    0.0%    0.1%  LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      4    0.0%    0.1%  Function: ^toString node:buffer:783:46
+      4    0.0%    0.1%  Function: ^processPromiseRejections node:internal/process/promises:211:34
+      4    0.0%    0.1%  Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/router/index.js:136:31
+      4    0.0%    0.1%  Function: ^deserializeObject /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/bson/lib/parser/deserializer.js:65:27
+      3    0.0%    0.1%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      3    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\s*else\b)
+      3    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\^)
+      3    0.0%    0.1%  RegExp: ^(?:\{\{(~)?#\*?)
+      3    0.0%    0.1%  RegExp: ^(?:\.\.)
+      3    0.0%    0.1%  LazyCompile: *validateString node:internal/validators:118:24
+      3    0.0%    0.1%  LazyCompile: *relative node:path:1190:11
+      3    0.0%    0.1%  LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      3    0.0%    0.1%  LazyCompile: *readFileAfterStat node:fs:326:27
+      3    0.0%    0.1%  LazyCompile: *readFile node:fs:373:18
+      3    0.0%    0.1%  LazyCompile: *getValidatedString /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/bson/lib/parser/deserializer.js:641:28
+      3    0.0%    0.1%  LazyCompile: *generateList /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:143:38
+      3    0.0%    0.1%  LazyCompile: *fulfilled /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      3    0.0%    0.1%  LazyCompile: *execIteration /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js:39:27
+      3    0.0%    0.1%  LazyCompile: *createError /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/http-errors/index.js:49:22
+      3    0.0%    0.1%  LazyCompile: *accept /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:101:26
+      3    0.0%    0.1%  LazyCompile: *_addListener node:events:554:22
+      3    0.0%    0.1%  LazyCompile: *Program /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:113:28
+      3    0.0%    0.1%  Function: ^step /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      3    0.0%    0.1%  Function: ^resolve node:path:1091:10
+      3    0.0%    0.1%  Function: ^parserOnHeadersComplete node:_http_common:77:33
+      3    0.0%    0.1%  Function: ^getEncodingOps node:buffer:679:24
+      3    0.0%    0.1%  Function: ^compile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      3    0.0%    0.1%  Function: ^<anonymous> node:internal/validators:84:3
+      3    0.0%    0.1%  Function: ^<anonymous> node:internal/url:682:12
+      2    0.0%    0.0%  RegExp: ^\s*?\r?\n
+      2    0.0%    0.0%  RegExp: ^\.|this\b
+      2    0.0%    0.0%  RegExp: ^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$
+      2    0.0%    0.0%  RegExp: ^(?:true(?=([~}\s)])))
+      2    0.0%    0.0%  RegExp: ^(?:false(?=([~}\s)])))
+      2    0.0%    0.0%  RegExp: ^(?:\{\{\{\{)
+      2    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\*?)
+      2    0.0%    0.0%  RegExp: ^(?:\{\{(~)?!--)
+      2    0.0%    0.0%  RegExp: ^(?:=)
+      2    0.0%    0.0%  RegExp: [&<>"'`=]
+      2    0.0%    0.0%  RegExp: ;\s*charset\s*=
+      2    0.0%    0.0%  RegExp: -?-?~?\}\}$
+      2    0.0%    0.0%  LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/router/index.js:288:23
+      2    0.0%    0.0%  LazyCompile: *readFileSync node:fs:450:22
+      2    0.0%    0.0%  LazyCompile: *hb.compile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars.js:38:25
+      2    0.0%    0.0%  LazyCompile: *getStringWidth node:internal/util/inspect:2181:43
+      2    0.0%    0.0%  LazyCompile: *formatProperty node:internal/util/inspect:1810:24
+      2    0.0%    0.0%  LazyCompile: *anonymous /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:549:49
+      2    0.0%    0.0%  LazyCompile: *_write node:internal/streams/writable:283:16
+      2    0.0%    0.0%  LazyCompile: *_storeHeader node:_http_outgoing:374:22
+      2    0.0%    0.0%  LazyCompile: *SendStream /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/send/index.js:96:21
+      2    0.0%    0.0%  LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+      2    0.0%    0.0%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      2    0.0%    0.0%  LazyCompile: *Module._compile node:internal/modules/cjs/loader:1057:37
+      2    0.0%    0.0%  LazyCompile: *C node:internal/deps/cjs-module-lexer/dist/lexer:1:1152
+      2    0.0%    0.0%  LazyCompile: *<anonymous> node:vm:313:27
+      2    0.0%    0.0%  LazyCompile: *<anonymous> node:internal/fs/utils:357:35
+      2    0.0%    0.0%  LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js:15:44
+      2    0.0%    0.0%  LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:130:39
+      2    0.0%    0.0%  LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      2    0.0%    0.0%  LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:201:47
+      2    0.0%    0.0%  LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:164:57
+      2    0.0%    0.0%  Function: ^writeHead node:_http_server:269:19
+      2    0.0%    0.0%  Function: ^writeHead /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/on-headers/index.js:28:29
+      2    0.0%    0.0%  Function: ^wrapper /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/internal/wrapHelper.js:12:33
+      2    0.0%    0.0%  Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      2    0.0%    0.0%  Function: ^unenroll node:timers:78:18
+      2    0.0%    0.0%  Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      2    0.0%    0.0%  Function: ^trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/router/index.js:288:23
+      2    0.0%    0.0%  Function: ^toString /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/uid-safe/index.js:102:19
+      2    0.0%    0.0%  Function: ^setupParams /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1034:36
+      2    0.0%    0.0%  Function: ^setWriteHeadHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/on-headers/index.js:105:30
+      2    0.0%    0.0%  Function: ^setStreamTimeout node:internal/stream_base_commons:237:26
+      2    0.0%    0.0%  Function: ^session /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-session/index.js:179:26
+      2    0.0%    0.0%  Function: ^ret._setup /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/runtime.js:217:25
+      2    0.0%    0.0%  Function: ^resolvePath /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:492:36
+      2    0.0%    0.0%  Function: ^readableAddChunk node:internal/streams/readable:236:26
+      2    0.0%    0.0%  Function: ^onwrite node:internal/streams/writable:425:17
+      2    0.0%    0.0%  Function: ^lookupProperty /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/runtime.js:118:44
+      2    0.0%    0.0%  Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/router/layer.js:86:49
+      2    0.0%    0.0%  Function: ^go$readFile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/graceful-fs/graceful-fs.js:117:26
+      2    0.0%    0.0%  Function: ^getOptions node:internal/fs/utils:314:20
+      2    0.0%    0.0%  Function: ^getHeader node:_http_outgoing:590:57
+      2    0.0%    0.0%  Function: ^getEncodingPriority /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/negotiator/lib/encoding.js:98:29
+      2    0.0%    0.0%  Function: ^fulfilled /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      2    0.0%    0.0%  Function: ^fileURLToPath node:internal/url:1413:23
+      2    0.0%    0.0%  Function: ^error /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/send/index.js:267:45
+      2    0.0%    0.0%  Function: ^createProtoAccessControl /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/internal/proto-access.js:19:34
+      2    0.0%    0.0%  Function: ^contentType /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/response.js:599:32
+      2    0.0%    0.0%  Function: ^clearTimeout node:timers:184:22
+      2    0.0%    0.0%  Function: ^clearBuffer node:internal/streams/writable:529:21
+      2    0.0%    0.0%  Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      2    0.0%    0.0%  Function: ^appendToBuffer /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:42:42
+      2    0.0%    0.0%  Function: ^_write node:internal/streams/writable:283:16
+      2    0.0%    0.0%  Function: ^_copyActual node:buffer:243:21
+      2    0.0%    0.0%  Function: ^__awaiter /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:18:54
+      2    0.0%    0.0%  Function: ^ReadableState node:internal/streams/readable:78:23
+      2    0.0%    0.0%  Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      2    0.0%    0.0%  Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      2    0.0%    0.0%  Function: ^Hash node:internal/crypto/hash:58:14
+      2    0.0%    0.0%  Function: ^Glob._readdirError /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:578:41
+      2    0.0%    0.0%  Function: ^ExpressHandlebars._compileTemplate /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:313:61
+      2    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:73:3
+      2    0.0%    0.0%  Function: ^<anonymous> node:internal/util:347:32
+      2    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:668:38
+      2    0.0%    0.0%  Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:85:24
+      2    0.0%    0.0%  Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+      2    0.0%    0.0%  Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      2    0.0%    0.0%  Function: *wasm-function[15]
+      1    0.0%    0.0%  RegExp: ^\s*?(\r?\n|$)
+      1    0.0%    0.0%  RegExp: ^\s*([^\s;]+)\s*(?:;(.*))?$
+      1    0.0%    0.0%  RegExp: ^\[.*\]$
+      1    0.0%    0.0%  RegExp: ^.*[\.\/\\]
+      1    0.0%    0.0%  RegExp: ^(?:null(?=([~}\s)])))
+      1    0.0%    0.0%  RegExp: ^(?:as\s+\|)
+      1    0.0%    0.0%  RegExp: ^(?:\}\}\}\})
+      1    0.0%    0.0%  RegExp: ^(?:\}(~)?\}\})
+      1    0.0%    0.0%  RegExp: ^(?:\|)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\{)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?>)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?&)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?#>)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?![\s\S]*?\}\})
+      1    0.0%    0.0%  RegExp: ^(?:\s+)
+      1    0.0%    0.0%  RegExp: ^(?:\.(?=([=~}\s\/.)|])))
+      1    0.0%    0.0%  RegExp: ^(?:\))
+      1    0.0%    0.0%  RegExp: ^(?:[\s\S]*?--(~)?\}\})
+      1    0.0%    0.0%  RegExp: ^(?:@)
+      1    0.0%    0.0%  RegExp: ^(?:(~)?\}\})
+      1    0.0%    0.0%  RegExp: ^(?:'(\\[']|[^'])*')
+      1    0.0%    0.0%  RegExp: \r?\n?
+      1    0.0%    0.0%  RegExp: \/+
+      1    0.0%    0.0%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      1    0.0%    0.0%  RegExp: [\u0000-\u001f\u0022\u005c\ud800-\udfff]|[\ud800-\udbff](?![\udc00-\udfff])|(?:[^\ud800-\udbff]|^)[\udc00-\udfff]
+      1    0.0%    0.0%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      1    0.0%    0.0%  RegExp: (\[[^[\]]*])
+      1    0.0%    0.0%  RegExp: (?:^|\/)\.?\.$
+      1    0.0%    0.0%  RegExp: (?:\r\n?|\n)
+      1    0.0%    0.0%  LazyCompile: *unput /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:429:34
+      1    0.0%    0.0%  LazyCompile: *stylizeWithColor node:internal/util/inspect:540:26
+      1    0.0%    0.0%  LazyCompile: *splitRoot node:fs:2366:33
+      1    0.0%    0.0%  LazyCompile: *readSync node:fs:684:18
+      1    0.0%    0.0%  LazyCompile: *readFileAfterClose node:internal/fs/read_file_context:46:28
+      1    0.0%    0.0%  LazyCompile: *read node:internal/fs/read_file_context:85:7
+      1    0.0%    0.0%  LazyCompile: *quotedString /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      1    0.0%    0.0%  LazyCompile: *push /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:868:22
+      1    0.0%    0.0%  LazyCompile: *popStack /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:960:30
+      1    0.0%    0.0%  LazyCompile: *inflight /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/inflight/inflight.js:7:19
+      1    0.0%    0.0%  LazyCompile: *formatValue node:internal/util/inspect:745:21
+      1    0.0%    0.0%  LazyCompile: *extname node:path:1385:10
+      1    0.0%    0.0%  LazyCompile: *createNewLookupObject /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/internal/create-new-lookup-object.js:15:31
+      1    0.0%    0.0%  LazyCompile: *compile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:490:17
+      1    0.0%    0.0%  LazyCompile: *close node:internal/fs/read_file_context:111:8
+      1    0.0%    0.0%  LazyCompile: *accept /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/visitor.js:57:26
+      1    0.0%    0.0%  LazyCompile: *_unrefTimer node:net:417:52
+      1    0.0%    0.0%  LazyCompile: *__awaiter /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:18:54
+      1    0.0%    0.0%  LazyCompile: *SourceNode /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/source-map/lib/source-node.js:35:20
+      1    0.0%    0.0%  LazyCompile: *SourceLocation /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:32:24
+      1    0.0%    0.0%  LazyCompile: *RES /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/inflight/inflight.js:18:28
+      1    0.0%    0.0%  LazyCompile: *PathExpression /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:289:42
+      1    0.0%    0.0%  LazyCompile: *Hash node:internal/crypto/hash:58:14
+      1    0.0%    0.0%  LazyCompile: *Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+      1    0.0%    0.0%  LazyCompile: *ContentStatement /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:228:46
+      1    0.0%    0.0%  LazyCompile: *<anonymous> node:buffer:349:36
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:98:47
+      1    0.0%    0.0%  Function: wasm-function[15]
+      1    0.0%    0.0%  Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      1    0.0%    0.0%  Function: ^writeOrBuffer /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/readable-stream/lib/_stream_writable.js:363:23
+      1    0.0%    0.0%  Function: ^wrapHelpersToPassLookupProperty /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/runtime.js:359:41
+      1    0.0%    0.0%  Function: ^verb /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:30:18
+      1    0.0%    0.0%  Function: ^value node:internal/console/constructor:300:20
+      1    0.0%    0.0%  Function: ^value node:internal/console/constructor:258:20
+      1    0.0%    0.0%  Function: ^validateString node:internal/validators:118:24
+      1    0.0%    0.0%  Function: ^validateClose /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:22:23
+      1    0.0%    0.0%  Function: ^updateOutgoingData node:_http_server:554:28
+      1    0.0%    0.0%  Function: ^trySelfParentPath node:internal/modules/cjs/loader:427:27
+      1    0.0%    0.0%  Function: ^tryRender /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/application.js:638:19
+      1    0.0%    0.0%  Function: ^toPathIfFileURL node:internal/url:1496:25
+      1    0.0%    0.0%  Function: ^template /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/runtime.js:52:18
+      1    0.0%    0.0%  Function: ^stylizeWithColor node:internal/util/inspect:540:26
+      1    0.0%    0.0%  Function: ^stringToFlags node:internal/fs/utils:555:23
+      1    0.0%    0.0%  Function: ^strEscape /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/safe-stable-stringify/index.js:55:20
+      1    0.0%    0.0%  Function: ^stat node:fs:1454:14
+      1    0.0%    0.0%  Function: ^splitRoot node:fs:2366:33
+      1    0.0%    0.0%  Function: ^specify /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/negotiator/lib/encoding.js:117:17
+      1    0.0%    0.0%  Function: ^shouldDestroy /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-session/index.js:435:27
+      1    0.0%    0.0%  Function: ^setupHelper /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1020:36
+      1    0.0%    0.0%  Function: ^setopts /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/common.js:48:18
+      1    0.0%    0.0%  Function: ^setHasTickScheduled node:internal/process/task_queues:52:29
+      1    0.0%    0.0%  Function: ^set maxAge /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-session/session/cookie.js:83:13
+      1    0.0%    0.0%  Function: ^set /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/application.js:352:23
+      1    0.0%    0.0%  Function: ^sent /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:28:39
+      1    0.0%    0.0%  Function: ^scopedId /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/ast.js:14:32
+      1    0.0%    0.0%  Function: ^require node:internal/modules/cjs/helpers:101:31
+      1    0.0%    0.0%  Function: ^realpathSync node:fs:2412:22
+      1    0.0%    0.0%  Function: ^readSync node:fs:684:18
+      1    0.0%    0.0%  Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1    0.0%    0.0%  Function: ^readFileAfterStat node:fs:326:27
+      1    0.0%    0.0%  Function: ^readFile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/graceful-fs/graceful-fs.js:111:21
+      1    0.0%    0.0%  Function: ^read node:internal/modules/package_json_reader:16:14
+      1    0.0%    0.0%  Function: ^read node:internal/fs/read_file_context:85:7
+      1    0.0%    0.0%  Function: ^read /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/node_modules/mongodb/lib/utils.js:963:9
+      1    0.0%    0.0%  Function: ^randomFillSync node:internal/crypto/random:111:24
+      1    0.0%    0.0%  Function: ^pushSource /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      1    0.0%    0.0%  Function: ^pushContext /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:437:36
+      1    0.0%    0.0%  Function: ^push /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:868:22
+      1    0.0%    0.0%  Function: ^push /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:79:22
+      1    0.0%    0.0%  Function: ^programExpression /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:847:48
+      1    0.0%    0.0%  Function: ^program /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/runtime.js:155:30
+      1    0.0%    0.0%  Function: ^prepareProgram /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:185:24
+      1    0.0%    0.0%  Function: ^preferredEncodings /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/negotiator/lib/encoding.js:138:28
+      1    0.0%    0.0%  Function: ^posix /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/path-is-absolute/index.js:3:15
+      1    0.0%    0.0%  Function: ^popAsyncContext node:internal/async_hooks:554:25
+      1    0.0%    0.0%  Function: ^pipe /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/send/index.js:510:43
+      1    0.0%    0.0%  Function: ^parserOnIncoming node:_http_server:852:26
+      1    0.0%    0.0%  Function: ^parseFileMode node:internal/validators:59:23
+      1    0.0%    0.0%  Function: ^parse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/minimatch/minimatch.js:296:16
+      1    0.0%    0.0%  Function: ^parse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1    0.0%    0.0%  Function: ^parse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/content-type/index.js:106:16
+      1    0.0%    0.0%  Function: ^onstat /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/send/index.js:721:33
+      1    0.0%    0.0%  Function: ^onFinish node:internal/streams/writable:665:20
+      1    0.0%    0.0%  Function: ^normalizeParseOptions /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/qs/lib/parse.js:203:59
+      1    0.0%    0.0%  Function: ^nextTick node:internal/process/task_queues:104:18
+      1    0.0%    0.0%  Function: ^nextPart node:fs:2399:31
+      1    0.0%    0.0%  Function: ^next /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/router/index.js:176:16
+      1    0.0%    0.0%  Function: ^moveHelperToHooks /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/helpers.js:48:27
+      1    0.0%    0.0%  Function: ^moduleStrategy node:internal/modules/esm/translators:110:56
+      1    0.0%    0.0%  Function: ^moduleProvider node:internal/modules/esm/loader:279:28
+      1    0.0%    0.0%  Function: ^module.exports /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/utils-merge/index.js:16:36
+      1    0.0%    0.0%  Function: ^module.exports /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/qs/lib/parse.js:237:27
+      1    0.0%    0.0%  Function: ^messageHandler /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:416:35
+      1    0.0%    0.0%  Function: ^merge /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/qs/lib/utils.js:47:27
+      1    0.0%    0.0%  Function: ^maybeReadMore_ /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/readable-stream/lib/_stream_readable.js:565:24
+      1    0.0%    0.0%  Function: ^matchHeader node:_http_outgoing:524:21
+      1    0.0%    0.0%  Function: ^logger node:internal/util/debuglog:95:18
+      1    0.0%    0.0%  Function: ^isPrevWhitespace /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:148:26
+      1    0.0%    0.0%  Function: ^isNextWhitespace /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:165:26
+      1    0.0%    0.0%  Function: ^isInt32 node:internal/validators:36:17
+      1    0.0%    0.0%  Function: ^isAbsolute node:path:1156:13
+      1    0.0%    0.0%  Function: ^internalBinding node:internal/bootstrap/loaders:164:45
+      1    0.0%    0.0%  Function: ^insertSort /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/safe-stable-stringify/index.js:86:21
+      1    0.0%    0.0%  Function: ^insert node:internal/timers:350:16
+      1    0.0%    0.0%  Function: ^highWaterMarkFrom node:internal/streams/state:10:27
+      1    0.0%    0.0%  Function: ^helperSexpr /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:271:36
+      1    0.0%    0.0%  Function: ^header /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/request.js:65:29
+      1    0.0%    0.0%  Function: ^hasListeners /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/send/index.js:1021:23
+      1    0.0%    0.0%  Function: ^glob /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:62:15
+      1    0.0%    0.0%  Function: ^getStatsFromBinding node:internal/fs/utils:530:29
+      1    0.0%    0.0%  Function: ^getPathFromURLPosix node:internal/url:1395:29
+      1    0.0%    0.0%  Function: ^getOwn node:internal/bootstrap/loaders:180:16
+      1    0.0%    0.0%  Function: ^getKeys node:internal/util/inspect:688:17
+      1    0.0%    0.0%  Function: ^getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/utils/js/getInfo.js:4:17
+      1    0.0%    0.0%  Function: ^getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/components/info/services/infoService.js:7:18
+      1    0.0%    0.0%  Function: ^getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/components/info/controllers/infoController.js:5:18
+      1    0.0%    0.0%  Function: ^getFunctionBase node:internal/util/inspect:1151:25
+      1    0.0%    0.0%  Function: ^getColorDepth node:internal/tty:106:23
+      1    0.0%    0.0%  Function: ^get node:internal/streams/duplex:94:8
+      1    0.0%    0.0%  Function: ^get node:internal/bootstrap/pre_execution:319:8
+      1    0.0%    0.0%  Function: ^get node:internal/bootstrap/pre_execution:307:8
+      1    0.0%    0.0%  Function: ^get /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/readable-stream/lib/_stream_writable.js:673:20
+      1    0.0%    0.0%  Function: ^generateETag /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/utils.js:272:32
+      1    0.0%    0.0%  Function: ^formatValue node:internal/util/inspect:745:21
+      1    0.0%    0.0%  Function: ^formatRaw node:internal/util/inspect:820:19
+      1    0.0%    0.0%  Function: ^formatPrimitive node:internal/util/inspect:1519:25
+      1    0.0%    0.0%  Function: ^format /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/content-type/index.js:65:17
+      1    0.0%    0.0%  Function: ^fn node:internal/util:345:14
+      1    0.0%    0.0%  Function: ^finish /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/common.js:118:17
+      1    0.0%    0.0%  Function: ^fastparse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.0%  Function: ^extname node:path:1385:10
+      1    0.0%    0.0%  Function: ^exports.isMongooseArray /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/lib/types/array/isMongooseArray.js:3:35
+      1    0.0%    0.0%  Function: ^execIteration /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js:39:27
+      1    0.0%    0.0%  Function: ^etag /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/etag/index.js:70:15
+      1    0.0%    0.0%  Function: ^end /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/compression/index.js:92:28
+      1    0.0%    0.0%  Function: ^emitBeforeScript node:internal/async_hooks:510:26
+      1    0.0%    0.0%  Function: ^emit node:events:474:44
+      1    0.0%    0.0%  Function: ^each /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:91:22
+      1    0.0%    0.0%  Function: ^digest node:internal/crypto/hash:115:40
+      1    0.0%    0.0%  Function: ^createNewLookupObject /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/internal/create-new-lookup-object.js:15:31
+      1    0.0%    0.0%  Function: ^createHash node:crypto:129:20
+      1    0.0%    0.0%  Function: ^cpus node:os:133:14
+      1    0.0%    0.0%  Function: ^cors /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/cors/lib/index.js:159:16
+      1    0.0%    0.0%  Function: ^construct node:internal/streams/destroy:225:19
+      1    0.0%    0.0%  Function: ^connectionListenerInternal node:_http_server:443:36
+      1    0.0%    0.0%  Function: ^compileInput /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1    0.0%    0.0%  Function: ^compile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:63:28
+      1    0.0%    0.0%  Function: ^clearStateChar /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/minimatch/minimatch.js:328:27
+      1    0.0%    0.0%  Function: ^checkRevision /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/runtime.js:34:23
+      1    0.0%    0.0%  Function: ^checkInt node:internal/buffer:58:18
+      1    0.0%    0.0%  Function: ^canBeRequiredByUsers node:internal/bootstrap/loaders:240:30
+      1    0.0%    0.0%  Function: ^blockParamIndex /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:461:44
+      1    0.0%    0.0%  Function: ^arrayClone node:events:883:20
+      1    0.0%    0.0%  Function: ^applyHeaders /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/cors/lib/index.js:144:24
+      1    0.0%    0.0%  Function: ^append /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/vary/index.js:38:17
+      1    0.0%    0.0%  Function: ^app.<computed> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/application.js:473:25
+      1    0.0%    0.0%  Function: ^alphasort /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/common.js:19:20
+      1    0.0%    0.0%  Function: ^allocate node:buffer:398:18
+      1    0.0%    0.0%  Function: ^allocUnsafeSlow node:buffer:383:50
+      1    0.0%    0.0%  Function: ^aliasable /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1006:32
+      1    0.0%    0.0%  Function: ^afterWrite /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/readable-stream/lib/_stream_writable.js:466:20
+      1    0.0%    0.0%  Function: ^addDepth /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:355:30
+      1    0.0%    0.0%  Function: ^accept /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/visitor.js:57:26
+      1    0.0%    0.0%  Function: ^accept /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:101:26
+      1    0.0%    0.0%  Function: ^_transform /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/winston/lib/winston/logger.js:275:13
+      1    0.0%    0.0%  Function: ^_storeHeader node:_http_outgoing:374:22
+      1    0.0%    0.0%  Function: ^_dump node:_http_incoming:364:49
+      1    0.0%    0.0%  Function: ^_addListener node:events:554:22
+      1    0.0%    0.0%  Function: ^_addHeaderLine node:_http_incoming:337:24
+      1    0.0%    0.0%  Function: ^__generator /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:27:58
+      1    0.0%    0.0%  Function: ^WritableState.onwrite /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/readable-stream/lib/_stream_writable.js:159:27
+      1    0.0%    0.0%  Function: ^Writable.write /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/readable-stream/lib/_stream_writable.js:288:37
+      1    0.0%    0.0%  Function: ^WhitespaceControl.PartialStatement.WhitespaceControl.CommentStatement /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:138:104
+      1    0.0%    0.0%  Function: ^WhitespaceControl.BlockStatement.WhitespaceControl.DecoratorBlock.WhitespaceControl.PartialBlockStatement /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:75:152
+      1    0.0%    0.0%  Function: ^TopologyDescription /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology_description.js:29:16
+      1    0.0%    0.0%  Function: ^TLSSocket._init node:_tls_wrap:667:37
+      1    0.0%    0.0%  Function: ^SubExpression /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:236:40
+      1    0.0%    0.0%  Function: ^Stream node:internal/streams/legacy:10:16
+      1    0.0%    0.0%  Function: ^Socket.resume node:net:630:35
+      1    0.0%    0.0%  Function: ^Readable.read node:internal/streams/readable:394:35
+      1    0.0%    0.0%  Function: ^Readable.read /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/readable-stream/lib/_stream_readable.js:392:36
+      1    0.0%    0.0%  Function: ^Readable.on node:internal/streams/readable:874:33
+      1    0.0%    0.0%  Function: ^PathExpression /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:289:42
+      1    0.0%    0.0%  Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    0.0%    0.0%  Function: ^Module._resolveLookupPaths node:internal/modules/cjs/loader:667:38
+      1    0.0%    0.0%  Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    0.0%    0.0%  Function: ^Long.isNegative /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/bson/lib/long.js:492:42
+      1    0.0%    0.0%  Function: ^Long /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/bson/lib/long.js:58:18
+      1    0.0%    0.0%  Function: ^IncomingMessage node:_http_incoming:51:25
+      1    0.0%    0.0%  Function: ^Glob._readdir /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:522:36
+      1    0.0%    0.0%  Function: ^Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+      1    0.0%    0.0%  Function: ^Glob /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:117:15
+      1    0.0%    0.0%  Function: ^ExpressHandlebars.renderView /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:246:55
+      1    0.0%    0.0%  Function: ^EventEmitter.init node:events:326:29
+      1    0.0%    0.0%  Function: ^DerivedLogger.<computed> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/winston/lib/winston/create-logger.js:71:47
+      1    0.0%    0.0%  Function: ^Cookie /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-session/session/cookie.js:25:46
+      1    0.0%    0.0%  Function: ^ContentStatement /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:228:46
+      1    0.0%    0.0%  Function: ^BlockStatement /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:130:42
+      1    0.0%    0.0%  Function: ^Accepts.encoding.Accepts.encodings /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/accepts/index.js:127:40
+      1    0.0%    0.0%  Function: ^<anonymous> node:vm:313:27
+      1    0.0%    0.0%  Function: ^<anonymous> node:path:1082:10
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:154:3
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/util:346:24
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:686:40
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:636:3
+      1    0.0%    0.0%  Function: ^<anonymous> node:buffer:349:36
+      1    0.0%    0.0%  Function: ^<anonymous> :1:20
+      1    0.0%    0.0%  Function: ^<anonymous> :1:1
+      1    0.0%    0.0%  Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:274:31
+      1    0.0%    0.0%  Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/graceful-fs/graceful-fs.js:118:50
+      1    0.0%    0.0%  Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:98:47
+      1    0.0%    0.0%  Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:331:47
+      1    0.0%    0.0%  Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:329:57
+      1    0.0%    0.0%  Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      1    0.0%    0.0%  Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:201:47
+      1    0.0%    0.0%  Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:181:44
+
+ [C++]:
+   ticks  total  nonlib   name
+   1996   10.6%   42.1%  epoll_pwait@@GLIBC_2.6
+    422    2.2%    8.9%  pthread_cond_signal@@GLIBC_2.3.2
+    290    1.5%    6.1%  __write@@GLIBC_2.2.5
+    158    0.8%    3.3%  fwrite@@GLIBC_2.2.5
+     91    0.5%    1.9%  __read@@GLIBC_2.2.5
+     68    0.4%    1.4%  syscall@@GLIBC_2.2.5
+     59    0.3%    1.2%  __libc_malloc@@GLIBC_2.2.5
+     52    0.3%    1.1%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     44    0.2%    0.9%  __open@@GLIBC_2.2.5
+     33    0.2%    0.7%  __mprotect@@GLIBC_PRIVATE
+     26    0.1%    0.5%  cfree@GLIBC_2.2.5
+     25    0.1%    0.5%  _IO_file_xsputn@@GLIBC_2.2.5
+     22    0.1%    0.5%  __pthread_mutex_lock@GLIBC_2.2.5
+     16    0.1%    0.3%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+     15    0.1%    0.3%  __pthread_mutex_unlock@GLIBC_2.2.5
+     11    0.1%    0.2%  operator new(unsigned long)@@GLIBCXX_3.4
+      8    0.0%    0.2%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      7    0.0%    0.1%  __pthread_rwlock_unlock@GLIBC_2.2.5
+      5    0.0%    0.1%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const@@GLIBCXX_3.4.18
+      5    0.0%    0.1%  operator delete(void*)@@GLIBCXX_3.4
+      5    0.0%    0.1%  __pthread_rwlock_wrlock@GLIBC_2.2.5
+      5    0.0%    0.1%  __close_nocancel@@GLIBC_PRIVATE
+      5    0.0%    0.1%  __clock_gettime@@GLIBC_PRIVATE
+      4    0.0%    0.1%  std::ostream::flush()@@GLIBCXX_3.4
+      4    0.0%    0.1%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      4    0.0%    0.1%  sigemptyset@@GLIBC_2.2.5
+      4    0.0%    0.1%  sigaddset@@GLIBC_2.2.5
+      4    0.0%    0.1%  accept4@@GLIBC_2.10
+      4    0.0%    0.1%  __errno_location@@GLIBC_2.2.5
+      3    0.0%    0.1%  operator delete[](void*)@@GLIBCXX_3.4
+      3    0.0%    0.1%  __munmap@@GLIBC_PRIVATE
+      3    0.0%    0.1%  __lll_lock_wait_private@@GLIBC_PRIVATE
+      3    0.0%    0.1%  __getpid@@GLIBC_2.2.5
+      2    0.0%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      2    0.0%    0.0%  std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      2    0.0%    0.0%  operator new[](unsigned long)@@GLIBCXX_3.4
+      2    0.0%    0.0%  llseek@GLIBC_2.2.5
+      2    0.0%    0.0%  getrusage@@GLIBC_2.2.5
+      2    0.0%    0.0%  fstatat@@GLIBC_2.33
+      2    0.0%    0.0%  fputc@@GLIBC_2.2.5
+      2    0.0%    0.0%  fflush@@GLIBC_2.2.5
+      2    0.0%    0.0%  brk@@GLIBC_2.2.5
+      2    0.0%    0.0%  __pthread_getspecific@GLIBC_2.2.5
+      2    0.0%    0.0%  _IO_getline_info@@GLIBC_2.2.5
+      2    0.0%    0.0%  _IO_do_write@@GLIBC_2.2.5
+      2    0.0%    0.0%  _IO_default_xsputn@@GLIBC_2.2.5
+      1    0.0%    0.0%  std::ostream::put(char)@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::ostream::operator<<(int)@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
+      1    0.0%    0.0%  std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.0%    0.0%  recvfrom@@GLIBC_2.2.5
+      1    0.0%    0.0%  pthread_sigmask@GLIBC_2.2.5
+      1    0.0%    0.0%  fgets@@GLIBC_2.2.5
+      1    0.0%    0.0%  epoll_ctl@@GLIBC_2.3.2
+      1    0.0%    0.0%  __sysconf@@GLIBC_2.2.5
+      1    0.0%    0.0%  __pthread_rwlock_tryrdlock@GLIBC_2.2.5
+      1    0.0%    0.0%  __pthread_once@GLIBC_2.2.5
+      1    0.0%    0.0%  __mmap@@GLIBC_PRIVATE
+      1    0.0%    0.0%  __lll_lock_wake_private@@GLIBC_PRIVATE
+      1    0.0%    0.0%  _IO_sscanf@@GLIBC_2.2.5
+      1    0.0%    0.0%  _IO_padn@@GLIBC_2.2.5
+      1    0.0%    0.0%  _IO_file_write@@GLIBC_2.2.5
+      1    0.0%    0.0%  _IO_file_underflow@@GLIBC_2.2.5
+
+ [Summary]:
+   ticks  total  nonlib   name
+   1258    6.6%   26.5%  JavaScript
+   3448   18.2%   72.8%  C++
+    516    2.7%   10.9%  GC
+  14179   74.9%          Shared libraries
+     33    0.2%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    376   30.3%    2.0%  pthread_cond_signal@@GLIBC_2.3.2
+    246   19.8%    1.3%  __write@@GLIBC_2.2.5
+    155   12.5%    0.8%  fwrite@@GLIBC_2.2.5
+     68    5.5%    0.4%  syscall@@GLIBC_2.2.5
+     60    4.8%    0.3%  __read@@GLIBC_2.2.5
+     51    4.1%    0.3%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     44    3.5%    0.2%  __open@@GLIBC_2.2.5
+     41    3.3%    0.2%  __libc_malloc@@GLIBC_2.2.5
+     28    2.3%    0.1%  __mprotect@@GLIBC_PRIVATE
+     24    1.9%    0.1%  _IO_file_xsputn@@GLIBC_2.2.5
+     19    1.5%    0.1%  cfree@GLIBC_2.2.5
+     17    1.4%    0.1%  __pthread_mutex_lock@GLIBC_2.2.5
+     15    1.2%    0.1%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+     10    0.8%    0.1%  __pthread_mutex_unlock@GLIBC_2.2.5
+      9    0.7%    0.0%  operator new(unsigned long)@@GLIBCXX_3.4
+      8    0.6%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      5    0.4%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const@@GLIBCXX_3.4.18
+      5    0.4%    0.0%  __pthread_rwlock_unlock@GLIBC_2.2.5
+      5    0.4%    0.0%  __close_nocancel@@GLIBC_PRIVATE
+      4    0.3%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      4    0.3%    0.0%  operator delete(void*)@@GLIBCXX_3.4
+      3    0.2%    0.0%  std::ostream::flush()@@GLIBCXX_3.4
+      3    0.2%    0.0%  operator delete[](void*)@@GLIBCXX_3.4
+      3    0.2%    0.0%  __pthread_rwlock_wrlock@GLIBC_2.2.5
+      3    0.2%    0.0%  __clock_gettime@@GLIBC_PRIVATE
+      2    0.2%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      2    0.2%    0.0%  std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      2    0.2%    0.0%  operator new[](unsigned long)@@GLIBCXX_3.4
+      2    0.2%    0.0%  llseek@GLIBC_2.2.5
+      2    0.2%    0.0%  fstatat@@GLIBC_2.33
+      2    0.2%    0.0%  fputc@@GLIBC_2.2.5
+      2    0.2%    0.0%  fflush@@GLIBC_2.2.5
+      2    0.2%    0.0%  brk@@GLIBC_2.2.5
+      2    0.2%    0.0%  __errno_location@@GLIBC_2.2.5
+      2    0.2%    0.0%  _IO_getline_info@@GLIBC_2.2.5
+      2    0.2%    0.0%  _IO_default_xsputn@@GLIBC_2.2.5
+      1    0.1%    0.0%  std::ostream::put(char)@@GLIBCXX_3.4
+      1    0.1%    0.0%  std::ostream::operator<<(int)@@GLIBCXX_3.4
+      1    0.1%    0.0%  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)@@GLIBCXX_3.4
+      1    0.1%    0.0%  std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
+      1    0.1%    0.0%  std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.1%    0.0%  fgets@@GLIBC_2.2.5
+      1    0.1%    0.0%  __sysconf@@GLIBC_2.2.5
+      1    0.1%    0.0%  __pthread_rwlock_tryrdlock@GLIBC_2.2.5
+      1    0.1%    0.0%  __pthread_once@GLIBC_2.2.5
+      1    0.1%    0.0%  __lll_lock_wake_private@@GLIBC_PRIVATE
+      1    0.1%    0.0%  _IO_sscanf@@GLIBC_2.2.5
+      1    0.1%    0.0%  _IO_file_write@@GLIBC_2.2.5
+      1    0.1%    0.0%  _IO_file_underflow@@GLIBC_2.2.5
+      1    0.1%    0.0%  _IO_do_write@@GLIBC_2.2.5
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  13588   71.8%  /usr/local/lib/nodejs/bin/node
+   8308   61.1%    /usr/local/lib/nodejs/bin/node
+   2417   29.1%      Function: ^compileFunction node:vm:308:25
+   1374   56.8%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+   1374  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+   1347   98.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+     27    2.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1112:37
+   1029   42.6%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1057:37
+   1029  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+    575   55.9%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+    454   44.1%            LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+    378    4.5%      /usr/local/lib/nodejs/bin/node
+     31    8.2%        LazyCompile: *Glob._process /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:295:36
+     18   58.1%          LazyCompile: *Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+     18  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:622:43
+     13   41.9%          Function: ^Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+     13  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:622:43
+     29    7.7%        /usr/local/lib/nodejs/bin/node
+     20   69.0%          LazyCompile: *Glob._process /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:295:36
+     14   70.0%            LazyCompile: *Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+      6   30.0%            Function: ^Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+      3   10.3%          LazyCompile: *Glob._processReaddir2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:372:44
+      3  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:367:43
+      3   10.3%          Function: ^Glob._processReaddir2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:372:44
+      3  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:367:43
+      1    3.4%          LazyCompile: ~isValid /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongodb/lib/read_preference.js:133:19
+      1  100.0%            LazyCompile: ~isValid /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongodb/lib/read_preference.js:149:12
+      1    3.4%          Function: ^Glob._process /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:295:36
+      1  100.0%            Function: ^Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+      1    3.4%          Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/color-string/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+     22    5.8%        LazyCompile: *reduceToSingleString node:internal/util/inspect:1902:30
+     22  100.0%          LazyCompile: *formatRaw node:internal/util/inspect:820:19
+     21   95.5%            LazyCompile: *formatValue node:internal/util/inspect:745:21
+      1    4.5%            Function: ^formatValue node:internal/util/inspect:745:21
+     18    4.8%        Function: ^FastBuffer node:internal/buffer:958:14
+     18  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      9   50.0%            Function: ^allocUnsafeSlow node:buffer:383:50
+      6   33.3%            Function: ^allocate node:buffer:398:18
+      3   16.7%            Function: ^createPool node:buffer:151:20
+     16    4.2%        LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+     15   93.8%          Function: ^lex /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+     15  100.0%            Function: ^lex /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      1    6.3%          LazyCompile: *parse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1  100.0%            Function: ^parseWithoutProcessing /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+     15    4.0%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+     14   93.3%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      8   57.1%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      5   35.7%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1    7.1%            LazyCompile: ~trySelf node:internal/modules/cjs/loader:441:17
+      1    6.7%          Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     12    3.2%        Function: ^strEscape /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/safe-stable-stringify/index.js:55:20
+     12  100.0%          Function: ^stringifyFnReplacer /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/safe-stable-stringify/index.js:203:32
+     12  100.0%            Function: ^stringifyFnReplacer /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/safe-stable-stringify/index.js:203:32
+     10    2.6%        LazyCompile: *quotedString /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      9   90.0%          Function: ^pushSource /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      5   55.6%            Function: ^append /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      4   44.4%            Function: ^appendEscaped /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      1   10.0%          Function: ^quotedString /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:998:38
+      1  100.0%            Function: ^setupParams /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1034:36
+     10    2.6%        LazyCompile: *formatProperty node:internal/util/inspect:1810:24
+      9   90.0%          LazyCompile: *formatRaw node:internal/util/inspect:820:19
+      8   88.9%            LazyCompile: *formatValue node:internal/util/inspect:745:21
+      1   11.1%            Function: ^formatValue node:internal/util/inspect:745:21
+      1   10.0%          Function: ^formatArray node:internal/util/inspect:1634:21
+      1  100.0%            Function: ^formatRaw node:internal/util/inspect:820:19
+     10    2.6%        Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/cors/lib/index.js:204:37
+     10  100.0%          Function: ^optionsCallback /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/cors/lib/index.js:198:34
+     10  100.0%            Function: ^corsMiddleware /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/cors/lib/index.js:203:35
+      8    2.1%        Function: ^removeColors node:internal/util:76:22
+      8  100.0%          Function: ^isBelowBreakLength node:internal/util/inspect:1878:28
+      8  100.0%            Function: ^reduceToSingleString node:internal/util/inspect:1902:30
+      6    1.6%        Function: ^header /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/response.js:759:29
+      6  100.0%          Function: ^contentType /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/response.js:599:32
+      6  100.0%            Function: ^send /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/response.js:107:25
+      6    1.6%        Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      6  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      6  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      5    1.3%        LazyCompile: *parse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/minimatch/minimatch.js:296:16
+      5  100.0%          /usr/local/lib/nodejs/bin/node
+      5  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/minimatch/minimatch.js:196:26
+      5    1.3%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      5  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      4   80.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1   20.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      5    1.3%        Function: ^expressInit /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/middleware/init.js:29:30
+      3   60.0%          LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/router/index.js:288:23
+      3  100.0%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/router/index.js:176:16
+      2   40.0%          Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/router/layer.js:86:49
+      2  100.0%            Function: ^trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/router/index.js:288:23
+      4    1.1%        LazyCompile: *getStringWidth node:internal/util/inspect:2181:43
+      4  100.0%          Function: ^groupArrayElements node:internal/util/inspect:1338:28
+      2   50.0%            LazyCompile: *reduceToSingleString node:internal/util/inspect:1902:30
+      2   50.0%            Function: ^reduceToSingleString node:internal/util/inspect:1902:30
+      4    1.1%        LazyCompile: *formatRaw node:internal/util/inspect:820:19
+      3   75.0%          LazyCompile: *formatValue node:internal/util/inspect:745:21
+      2   66.7%            Function: ^inspect node:internal/util/inspect:292:17
+      1   33.3%            LazyCompile: *formatProperty node:internal/util/inspect:1810:24
+      1   25.0%          Function: ^formatValue node:internal/util/inspect:745:21
+      1  100.0%            LazyCompile: *formatProperty node:internal/util/inspect:1810:24
+      4    1.1%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      2   50.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      2  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      2   50.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      4    1.1%        Function: ^normalize node:path:1127:12
+      4  100.0%          Function: ^join node:path:1166:7
+      2   50.0%            Function: ^makeAbs /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/common.js:199:18
+      1   25.0%            LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:208:81
+      1   25.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:208:81
+      4    1.1%        Function: ^mergeSource /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:267:36
+      2   50.0%          LazyCompile: *compile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1   50.0%            LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      1   50.0%            Function: ^compileChildren /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:805:44
+      2   50.0%          Function: ^createFunctionContext /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+      2  100.0%            Function: ^compile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      4    1.1%        Function: ^finish /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/common.js:118:17
+      4  100.0%          Function: ^Glob._finish /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:185:35
+      2   50.0%            LazyCompile: *Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+      2   50.0%            Function: ^done /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:171:17
+      4    1.1%        Function: ^compileFunction node:vm:308:25
+      3   75.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1057:37
+      3  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1   25.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      4    1.1%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      3   75.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1   25.0%          LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+    213    2.6%      Function: ^cpus node:os:133:14
+    211   99.1%        Function: ^getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/utils/js/getInfo.js:4:17
+    207   98.1%          Function: ^getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/components/info/services/infoService.js:7:18
+    207  100.0%            Function: ^getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/components/info/controllers/infoController.js:5:18
+      4    1.9%          LazyCompile: ~getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/components/info/services/infoService.js:7:18
+      3   75.0%            Function: ^getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/components/info/controllers/infoController.js:5:18
+      1   25.0%            LazyCompile: ~getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/components/info/controllers/infoController.js:5:18
+    205    2.5%      Function: ^memoryUsage node:internal/process/per_thread:168:23
+    205  100.0%        Function: ^getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/utils/js/getInfo.js:4:17
+    205  100.0%          Function: ^getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/components/info/services/infoService.js:7:18
+    205  100.0%            Function: ^getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/components/info/controllers/infoController.js:5:18
+    203    2.4%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+    203  100.0%        Function: ^Socket._writeGeneric node:net:769:42
+    202   99.5%          Function: ^Socket._writev node:net:801:36
+    202  100.0%            Function: ^doWrite node:internal/streams/writable:398:17
+    157    1.9%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+    128   81.5%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+     20   15.6%          Function: ~<anonymous> node:crypto:1:1
+     20  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     16   12.5%          Function: ~<anonymous> node:https:1:1
+     16  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     14   10.9%          Function: ~<anonymous> node:internal/child_process:1:1
+     14  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     11    8.6%          Function: ~<anonymous> node:tls:1:1
+     11  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      9    7.0%          Function: ~<anonymous> node:_http_server:1:1
+      9  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      6    4.7%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      6    4.7%          Function: ~<anonymous> node:child_process:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5    3.9%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      5  100.0%            LazyCompile: ~get node:crypto:287:8
+      5    3.9%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    3.1%          LazyCompile: ~initCJSParse node:internal/modules/esm/translators:58:28
+      4  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:146:60
+      4    3.1%          Function: ~<anonymous> node:assert:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    3.1%          Function: ~<anonymous> node:_tls_wrap:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    2.3%          LazyCompile: ~lazyLoadStreams node:fs:2845:25
+      3  100.0%            LazyCompile: ~get ReadStream node:fs:2988:17
+      3    2.3%          Function: ~<anonymous> node:internal/tls/secure-context:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    2.3%          Function: ~<anonymous> node:_http_common:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    1.6%          LazyCompile: ~get node:dns:334:8
+      2  100.0%            /usr/local/lib/nodejs/bin/node
+      2    1.6%          Function: ~<anonymous> node:cluster:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    1.6%          Function: ~<anonymous> node:_tls_common:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     15    9.6%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+     15  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+     15  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     14    8.9%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+     13   92.9%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:44:26
+     13  100.0%            LazyCompile: ~builtinStrategy node:internal/modules/esm/translators:252:58
+      1    7.1%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+    136    1.6%      Function: ^slice node:buffer:594:12
+     44   32.4%        LazyCompile: *toString node:buffer:783:46
+     42   95.5%          Function: ^readFileAfterClose node:internal/fs/read_file_context:46:28
+      2    4.5%          Function: ^deserializeObject /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/bson/lib/parser/deserializer.js:65:27
+      2  100.0%            Function: ^deserialize /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/bson/lib/parser/deserializer.js:36:21
+     37   27.2%        LazyCompile: *readFileAfterClose node:internal/fs/read_file_context:46:28
+     35   25.7%        Function: ^toString node:buffer:783:46
+     17   48.6%          Function: ^readFileSync node:fs:450:22
+     17  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+     15   42.9%          Function: ^readFileAfterClose node:internal/fs/read_file_context:46:28
+      2    5.7%          Function: ^deserializeObject /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/bson/lib/parser/deserializer.js:65:27
+      2  100.0%            Function: ^deserialize /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/bson/lib/parser/deserializer.js:36:21
+      1    2.9%          Function: ^getValidatedString /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/bson/lib/parser/deserializer.js:641:28
+      1  100.0%            Function: ^deserializeObject /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/bson/lib/parser/deserializer.js:65:27
+     18   13.2%        LazyCompile: *readFileSync node:fs:450:22
+     16   88.9%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+     10   62.5%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      6   37.5%            LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+      2   11.1%          LazyCompile: ~Module._extensions..json node:internal/modules/cjs/loader:1162:39
+      2  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      2    1.5%        LazyCompile: *getValidatedString /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/bson/lib/parser/deserializer.js:641:28
+      2  100.0%          Function: ^deserializeObject /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/bson/lib/parser/deserializer.js:65:27
+      2  100.0%            Function: ^deserializeObject /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/bson/lib/parser/deserializer.js:65:27
+    118    1.4%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+    118  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:147:22
+    118  100.0%          Function: ^Socket._writeGeneric node:net:769:42
+    118  100.0%            Function: ^Socket._write node:net:806:35
+     96    1.2%      LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+     83   86.5%        LazyCompile: *parse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+     83  100.0%          Function: ^parseWithoutProcessing /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+     47   56.6%            Function: ^parse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+     36   43.4%            LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+     13   13.5%        Function: ^lex /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      9   69.2%          LazyCompile: *parse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      9  100.0%            Function: ^parseWithoutProcessing /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      4   30.8%          Function: ^lex /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      4  100.0%            LazyCompile: *parse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+     96    1.2%      LazyCompile: *compile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     47   49.0%        LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+     47  100.0%          LazyCompile: *step /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+     44   93.6%            LazyCompile: *fulfilled /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      3    6.4%            LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+     32   33.3%        Function: ^compileChildren /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:805:44
+     32  100.0%          LazyCompile: *compile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     24   75.0%            LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      8   25.0%            Function: ^compileInput /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+     17   17.7%        Function: ^compileInput /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+     17  100.0%          Function: ^ret /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+     17  100.0%            Function: ^ExpressHandlebars._renderTemplate /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:321:60
+     94    1.1%      Function: ^close node:internal/fs/read_file_context:111:8
+     94  100.0%        Function: ^readFileAfterRead node:internal/fs/read_file_context:25:27
+     93    1.1%      Function: ^readFileAfterOpen node:fs:310:27
+
+   1996   10.6%  epoll_pwait@@GLIBC_2.6
+
+    546    2.9%  /usr/lib/x86_64-linux-gnu/libc.so.6
+    276   50.5%    /usr/local/lib/nodejs/bin/node
+     61   22.1%      /usr/local/lib/nodejs/bin/node
+     10   16.4%        LazyCompile: *quotedString /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+     10  100.0%          Function: ^pushSource /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      8   80.0%            Function: ^append /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      2   20.0%            Function: ^appendEscaped /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      7   11.5%        LazyCompile: *parse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      7  100.0%          Function: ^parseWithoutProcessing /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      4   57.1%            Function: ^parse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+      3   42.9%            LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      7   11.5%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      7  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      4   57.1%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      3   42.9%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      3    4.9%        LazyCompile: *reduceToSingleString node:internal/util/inspect:1902:30
+      3  100.0%          LazyCompile: *formatRaw node:internal/util/inspect:820:19
+      3  100.0%            LazyCompile: *formatValue node:internal/util/inspect:745:21
+      3    4.9%        LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      3  100.0%          LazyCompile: *step /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      3  100.0%            LazyCompile: *fulfilled /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      2    3.3%        LazyCompile: *readFile node:fs:373:18
+      2  100.0%          Function: ^go$readFile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/graceful-fs/graceful-fs.js:117:26
+      2  100.0%            Function: ^readFile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/graceful-fs/graceful-fs.js:111:21
+      2    3.3%        LazyCompile: *Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+      2  100.0%          Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:622:43
+      2  100.0%            LazyCompile: *RES /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/inflight/inflight.js:18:28
+      2    3.3%        LazyCompile: *<anonymous> node:internal/fs/utils:357:35
+      2  100.0%          Function: ^<anonymous> node:internal/fs/utils:668:38
+      2  100.0%            Function: ^<anonymous> node:internal/fs/utils:680:42
+      2    3.3%        Function: ^quotedString /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      2  100.0%          Function: ^pushSource /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      2  100.0%            Function: ^append /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      2    3.3%        Function: ^compileFunction node:vm:308:25
+      1   50.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1   50.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      2    3.3%        Function: ^FastBuffer node:internal/buffer:958:14
+      2  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      2  100.0%            Function: ^allocUnsafeSlow node:buffer:383:50
+      2    3.3%        Function: ^<anonymous> node:internal/fs/utils:357:35
+      2  100.0%          Function: ^<anonymous> node:internal/fs/utils:668:38
+      2  100.0%            Function: ^<anonymous> node:internal/fs/utils:680:42
+      1    1.6%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:488:36
+      1  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:553:30
+      1  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:553:30
+      1    1.6%        LazyCompile: ~add /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/lib/schema.js:491:36
+      1  100.0%          LazyCompile: ~compile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/lib/model.js:4804:33
+      1  100.0%            LazyCompile: ~Mongoose._model /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/lib/index.js:533:37
+      1    1.6%        LazyCompile: ~acquireRawConnection /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/knex/lib/dialects/mysql/index.js:60:23
+      1  100.0%          LazyCompile: ~create /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/knex/lib/client.js:245:15
+      1  100.0%            /usr/local/lib/nodejs/bin/node
+      1    1.6%        LazyCompile: ~<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/yargs/build/lib/yargs-factory.js:1232:13
+      1  100.0%          LazyCompile: ~YargsInstance file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/yargs/build/lib/yargs-factory.js:75:16
+      1  100.0%            LazyCompile: ~<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/yargs/build/lib/yargs-factory.js:27:12
+      1    1.6%        LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:72:39
+      1  100.0%          LazyCompile: ~onresolve node:dns:207:19
+      1    1.6%        LazyCompile: *unput /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:429:34
+      1  100.0%          LazyCompile: *anonymous /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:549:49
+      1  100.0%            LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+      1    1.6%        LazyCompile: *next /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+      1  100.0%          Function: ^lex /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      1  100.0%            Function: ^lex /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      1    1.6%        LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      1    1.6%        LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+      1    1.6%        LazyCompile: *Glob._process /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:295:36
+      1  100.0%          LazyCompile: *Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+      1  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:622:43
+      1    1.6%        Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/winston/lib/winston.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1    1.6%        Function: ^parseWithoutProcessing /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      1  100.0%          Function: ^parse /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+      1  100.0%            Function: ^compileInput /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1    1.6%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    1.6%        Function: ^Glob._process /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:295:36
+      1  100.0%          LazyCompile: ~Glob /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:117:15
+      1  100.0%            LazyCompile: ~glob /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:62:15
+      1    1.6%        Function: ^ExpressHandlebars._renderTemplate /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:321:60
+      1  100.0%          Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      1  100.0%            LazyCompile: *step /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1    1.6%        Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/minimatch/minimatch.js:196:26
+      1  100.0%          /usr/local/lib/nodejs/bin/node
+      1  100.0%            Function: ^make /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/minimatch/minimatch.js:160:15
+      1    1.6%        Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/minimatch/minimatch.js:189:43
+      1  100.0%          /usr/local/lib/nodejs/bin/node
+      1  100.0%            Function: ^make /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/minimatch/minimatch.js:160:15
+     10    3.6%      LazyCompile: *realpathSync node:fs:2412:22
+      6   60.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      6  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      5   83.3%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1   16.7%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      4   40.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      4  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      4  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      7    2.5%      LazyCompile: *resolve node:path:1091:10
+      3   42.9%        LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      3  100.0%          Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      3  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      2   28.6%        Function: ^lookup /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/view.js:104:40
+      2  100.0%          Function: ^View /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/view.js:52:14
+      2  100.0%            Function: ^render /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/application.js:531:29
+      1   14.3%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1   14.3%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      7    2.5%      LazyCompile: *readFileAfterStat node:fs:326:27
+      6    2.2%      LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/request.js:467:36
+      6  100.0%        LazyCompile: ~send /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/response.js:107:25
+      6  100.0%          LazyCompile: ~done /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/response.js:1011:27
+      6  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+      5    1.8%      LazyCompile: *readPackage node:internal/modules/cjs/loader:290:21
+      4   80.0%        LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      3   75.0%          Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      3  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1   25.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+      1  100.0%            LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+      1   20.0%        Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%          Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      5    1.8%      LazyCompile: *compile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      5  100.0%        LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      5  100.0%          LazyCompile: *step /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      5  100.0%            LazyCompile: *fulfilled /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      5    1.8%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      5  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      5  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      4   80.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1   20.0%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      5    1.8%      LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:167:47
+      5  100.0%        LazyCompile: *step /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      3   60.0%          LazyCompile: *ExpressHandlebars.getTemplate /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:162:56
+      3  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:208:81
+      1   20.0%          LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      1  100.0%            LazyCompile: *step /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1   20.0%          LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:201:47
+      1  100.0%            LazyCompile: *step /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      5    1.8%      Function: ^inflight /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/inflight/inflight.js:7:19
+      3   60.0%        LazyCompile: *wrapper /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/wrappy/wrappy.js:19:19
+      3  100.0%          Function: ^Glob._readdir /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:522:36
+      2   66.7%            Function: ^Glob._readdirInGlobStar /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:489:46
+      1   33.3%            Function: ^Glob._processGlobStar /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:620:44
+      2   40.0%        LazyCompile: *Glob._readdir /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:522:36
+      1   50.0%          LazyCompile: *Glob._process /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:295:36
+      1  100.0%            Function: ^Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+      1   50.0%          Function: ^Glob._readdirInGlobStar /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:489:46
+      1  100.0%            LazyCompile: *Glob._process /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:295:36
+      4    1.4%      LazyCompile: ~alphasort /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/common.js:19:20
+      4  100.0%        /usr/local/lib/nodejs/bin/node
+      4  100.0%          LazyCompile: ~finish /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/common.js:118:17
+      4  100.0%            LazyCompile: ~Glob._finish /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:185:35
+      4    1.4%      LazyCompile: *join node:path:1166:7
+      2   50.0%        Function: ^pipe /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/send/index.js:510:43
+      2  100.0%          Function: ^serveStatic /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/serve-static/index.js:72:31
+      2  100.0%            LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/router/index.js:288:23
+      1   25.0%        LazyCompile: *makeAbs /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/common.js:199:18
+      1  100.0%          Function: ^Glob._makeAbs /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:255:36
+      1  100.0%            Function: ^Glob._readdirError /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:578:41
+      1   25.0%        Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:208:81
+      1  100.0%          /usr/local/lib/nodejs/bin/node
+      1  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:201:47
+      4    1.4%      LazyCompile: *FastBuffer node:internal/buffer:958:14
+      4  100.0%        Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      2   50.0%          Function: ^createPool node:buffer:151:20
+      2  100.0%            Function: ^fromStringFast node:buffer:413:24
+      2   50.0%          Function: ^allocUnsafeSlow node:buffer:383:50
+      2  100.0%            Function: ^readFileAfterStat node:fs:326:27
+      4    1.4%      Function: ^decode /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/send/index.js:987:17
+      4  100.0%        Function: ^pipe /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/send/index.js:510:43
+      4  100.0%          Function: ^serveStatic /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/serve-static/index.js:72:31
+      2   50.0%            LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/router/index.js:288:23
+      2   50.0%            Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/router/layer.js:86:49
+      3    1.1%      LazyCompile: ~parse node:internal/deps/cjs-module-lexer/dist/lexer:1:131
+      3  100.0%        LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:192:34
+      3  100.0%          LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:146:60
+      3  100.0%            /usr/local/lib/nodejs/bin/node
+      3    1.1%      LazyCompile: *normalizeString node:path:66:25
+      3  100.0%        Function: ^resolve node:path:1091:10
+      3  100.0%          Function: ^makeAbs /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/common.js:199:18
+      3  100.0%            Function: ^Glob._makeAbs /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:255:36
+      3    1.1%      LazyCompile: *Glob._process /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:295:36
+      2   66.7%        Function: ^Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+      2  100.0%          Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:622:43
+      2  100.0%            LazyCompile: *RES /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/inflight/inflight.js:18:28
+      1   33.3%        LazyCompile: *Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+      1  100.0%          Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:622:43
+      1  100.0%            LazyCompile: *RES /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/inflight/inflight.js:18:28
+      3    1.1%      Function: ^ownProp /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/common.js:9:18
+      3  100.0%        LazyCompile: *Glob._process /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:295:36
+      2   66.7%          Function: ^Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+      2  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:622:43
+      1   33.3%          LazyCompile: *Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+      1  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:622:43
+      3    1.1%      Function: ^hash /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-session/index.js:596:14
+      2   66.7%        Function: ^generate /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-session/index.js:363:22
+      2  100.0%          Function: ^session /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-session/index.js:179:26
+      2  100.0%            LazyCompile: *trim_prefix /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/router/index.js:288:23
+      1   33.3%        Function: ^isModified /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-session/index.js:425:24
+      1  100.0%          Function: ^shouldSetCookie /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-session/index.js:464:29
+      1  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-session/index.js:220:28
+      3    1.1%      Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      3  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1   33.3%            Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/lib/helpers/model/discriminator.js:1:1
+      1   33.3%            Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/faker/lib/locales/en_IE/index.js:1:1
+      1   33.3%            Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-session/index.js:1:1
+      3    1.1%      Function: ^<anonymous> node:internal/validators:236:42
+      3  100.0%        Function: ^compileFunction node:vm:308:25
+      2   66.7%          Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      2  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1   33.3%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1057:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+     26    4.8%    LazyCompile: *compileFunction node:vm:308:25
+     26  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     26  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+     26  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+     24   92.3%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      2    7.7%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     12    2.2%    LazyCompile: *readFile node:fs:373:18
+     12  100.0%      Function: ^go$readFile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/graceful-fs/graceful-fs.js:117:26
+     12  100.0%        Function: ^readFile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/graceful-fs/graceful-fs.js:111:21
+     11   91.7%          LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:368:47
+     11  100.0%            LazyCompile: *step /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1    8.3%          Function: ^<anonymous> node:internal/util:346:24
+      1  100.0%            /usr/local/lib/nodejs/bin/node
+     12    2.2%    LazyCompile: *cpus node:os:133:14
+     12  100.0%      Function: ^getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/utils/js/getInfo.js:4:17
+     12  100.0%        Function: ^getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/components/info/services/infoService.js:7:18
+     12  100.0%          Function: ^getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/components/info/controllers/infoController.js:5:18
+     12  100.0%            Function: ^handle /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/router/layer.js:86:49
+     11    2.0%    LazyCompile: *close node:internal/fs/read_file_context:111:8
+     11  100.0%      Function: ^readFileAfterRead node:internal/fs/read_file_context:25:27
+     10    1.8%    LazyCompile: *readFileAfterStat node:fs:326:27
+     10    1.8%    LazyCompile: *readFileAfterOpen node:fs:310:27
+      8    1.5%    LazyCompile: *Glob._readdir /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:522:36
+      7   87.5%      Function: ^Glob._readdirInGlobStar /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:489:46
+      7  100.0%        LazyCompile: *Glob._process /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:295:36
+      5   71.4%          LazyCompile: *Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+      5  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:622:43
+      2   28.6%          Function: ^Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+      2  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:622:43
+      1   12.5%      LazyCompile: *Glob._process /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:295:36
+      1  100.0%        Function: ^Glob /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:117:15
+      1  100.0%          Function: ^glob /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:62:15
+      1  100.0%            Function: ^<anonymous> node:internal/util:346:24
+
+    422    2.2%  pthread_cond_signal@@GLIBC_2.3.2
+    106   25.1%    LazyCompile: *Glob._readdir /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:522:36
+     88   83.0%      Function: ^Glob._readdirInGlobStar /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:489:46
+     88  100.0%        LazyCompile: *Glob._process /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:295:36
+     73   83.0%          LazyCompile: *Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+     73  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:622:43
+     15   17.0%          Function: ^Glob._processGlobStar2 /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:628:45
+     15  100.0%            Function: ^<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:622:43
+     18   17.0%      LazyCompile: *Glob._process /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:295:36
+     18  100.0%        Function: ^Glob /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:117:15
+     18  100.0%          Function: ^glob /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/glob/glob.js:62:15
+      9   50.0%            LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:331:47
+      9   50.0%            Function: ^<anonymous> node:internal/util:346:24
+     91   21.6%    LazyCompile: *readFile node:fs:373:18
+     91  100.0%      Function: ^go$readFile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/graceful-fs/graceful-fs.js:117:26
+     91  100.0%        Function: ^readFile /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/graceful-fs/graceful-fs.js:111:21
+     87   95.6%          LazyCompile: *<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:368:47
+     87  100.0%            LazyCompile: *step /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      4    4.4%          Function: ^<anonymous> node:internal/util:346:24
+      4  100.0%            /usr/local/lib/nodejs/bin/node
+     69   16.4%    LazyCompile: *readFileAfterOpen node:fs:310:27
+     48   11.4%    LazyCompile: *close node:internal/fs/read_file_context:111:8
+     48  100.0%      Function: ^readFileAfterRead node:internal/fs/read_file_context:25:27
+     44   10.4%    LazyCompile: *readFileAfterStat node:fs:326:27
+     14    3.3%    LazyCompile: *read node:internal/fs/read_file_context:85:7
+     14  100.0%      Function: ^readFileAfterStat node:fs:326:27
+
+    290    1.5%  __write@@GLIBC_2.2.5
+    212   73.1%    /usr/local/lib/nodejs/bin/node
+     11    5.2%      /usr/local/lib/nodejs/bin/node
+      1    9.1%        LazyCompile: ~shouldUseNative /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/object-assign/index.js:21:25
+      1  100.0%          Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/object-assign/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+      1    9.1%        LazyCompile: ~parseIndexOptions /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/node_modules/mongodb/lib/utils.js:75:27
+      1  100.0%          LazyCompile: ~makeIndexSpec /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/node_modules/mongodb/lib/operations/indexes.js:40:23
+      1  100.0%            LazyCompile: ~CreateIndexOperation /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/node_modules/mongodb/lib/operations/indexes.js:120:16
+      1    9.1%        LazyCompile: ~getInfo file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/components/info/controllers/infoController.js:5:18
+      1  100.0%          /usr/local/lib/nodejs/bin/node
+      1  100.0%            /usr/local/lib/nodejs/bin/node
+      1    9.1%        LazyCompile: ~applyDefaultsAndAliases file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/yargs-parser/build/lib/yargs-parser.js:721:41
+      1  100.0%          LazyCompile: ~setConfig file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/yargs-parser/build/lib/yargs-parser.js:600:27
+      1  100.0%            LazyCompile: ~parse file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/yargs-parser/build/lib/yargs-parser.js:14:10
+      1    9.1%        LazyCompile: ~Run /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:78:13
+      1  100.0%          LazyCompile: ~exports.find /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%            Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/bcrypt/bcrypt.js:1:1
+      1    9.1%        LazyCompile: ~Mime.lookup /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/send/node_modules/mime/mime.js:69:33
+      1  100.0%          LazyCompile: ~contentType /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/response.js:599:32
+      1  100.0%            LazyCompile: ~send /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/express/lib/response.js:107:25
+      1    9.1%        LazyCompile: ~CaseInsensitiveMap /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:195:16
+      1  100.0%          Function: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1057:37
+      1    9.1%        LazyCompile: ~<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/yargs-parser/build/lib/yargs-parser.js:816:57
+      1  100.0%          /usr/local/lib/nodejs/bin/node
+      1  100.0%            LazyCompile: ~<anonymous> file:///home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/yargs-parser/build/lib/yargs-parser.js:815:35
+      1    9.1%        LazyCompile: *getOwn node:internal/bootstrap/loaders:180:16
+      1  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:287:14
+      1  100.0%            Function: ^<anonymous> node:internal/bootstrap/loaders:273:15
+      1    9.1%        Function: ^C node:internal/deps/cjs-module-lexer/dist/lexer:1:1152
+      1  100.0%          LazyCompile: ~parse node:internal/deps/cjs-module-lexer/dist/lexer:1:131
+      1  100.0%            LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:192:34
+      1    9.1%        /usr/local/lib/nodejs/bin/node
+      1  100.0%          LazyCompile: ~toString node:buffer:783:46
+      1  100.0%            LazyCompile: ~readFileSync node:fs:450:22
+      3    1.4%      Function: ^emit node:events:474:44
+      1   33.3%        LazyCompile: ~parserOnIncoming node:_http_server:852:26
+      1  100.0%          LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1   33.3%        LazyCompile: ~checkServer /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:139:21
+      1  100.0%          LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:223:12
+      1  100.0%            LazyCompile: ~executeAndReschedule /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongoose/node_modules/mongodb/lib/utils.js:788:34
+      1   33.3%        LazyCompile: ~<anonymous> /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongodb/lib/cmap/connection_pool.js:380:34
+      1  100.0%          Function: ^emit node:events:474:44
+      1  100.0%            LazyCompile: ~messageHandler /home/echevalier/Devel/Coder/Backend/backend_clase16/desafio/node_modules/mongodb/lib/cmap/connection.js:416:35
+     34   11.7%    LazyCompile: *compileFunction node:vm:308:25
+     34  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     34  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1057:37
+     34  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1112:37
+     26   76.5%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      8   23.5%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+

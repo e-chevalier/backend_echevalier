@@ -1,0 +1,22 @@
+{{!--  main.hbs --}}
+
+<h2> Contactos :</h2>
+{{#if listExists}}
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+        </tr>
+        {{#each contacts}}
+            <tr>
+                <td>{{this.nombre}}</td>
+                <td>{{this.apellido}}</td>
+                <td>{{this.email}}</td>
+                <td>{{this.telefono}}</td>
+            </tr>
+        {{/each}}    
+    </table>
+{{/if}}
+

@@ -1,0 +1,63 @@
+// Create database ecommerce
+use ecommerce
+
+// 1, 2) insertMany 10 messages on Messages Collection
+db.messages.insertMany([ { author: "CharlyGarcia@gmail.com", date: "26/1/2022 08:33:30", text: "¡Hola! ¿Que tal?" }, { author: "PedroAznar@hotmail.com", date: "26/1/2022 08:34:30", text: "¡Muy bien! ¿Y vos?" }, { author: "GustavoCerati59@live.com", date: "26/1/2022 08:36:30", text: "¡Genial!" }, { author: "echevalier@gmail.com", date: "26/1/2022 19:22:36", text: "Hola a todos!!!! ¿Como estan?" }, { author: "CharlyGarcia@gmail.com", date: "26/1/2022 19:33:30", text: "¡Hola! ¿Que tal?" }, { author: "PedroAznar@hotmail.com", date: "26/1/2022 19:34:30", text: "¡Muy bien! ¿Y vos?" }, { author: "GustavoCerati59@live.com", date: "26/1/2022 19:36:30", text: "¡Genial!" }, { author: "echevalier@gmail.com", date: "26/1/2022 20:22:36", text: "Hola a todos!!!! ¿Como estan?" }, { author: "CharlyGarcia@gmail.com", date: "26/1/2022 21:33:30", text: "¡Hola! ¿Que tal?" }, { author: "PedroAznar@hotmail.com", date: "26/1/2022 22:34:30", text: "¡Muy bien! ¿Y vos?" }])
+
+// 1, 2) insertMany 10 products on Products Collection
+db.products.insertMany([ { title: "Cereza", price: 120.0, thumbnail: "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_cerejas-128.png" }, { title: "Manzana", price: 900.0, thumbnail: "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_maca-128.png" }, { title: "Frutilla", price: 580.0, thumbnail: "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_morango-128.png" }, { title: "Banana", price: 1280.5, thumbnail: "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_banana-128.png" }, { title: "Uvas", price: 1700.0, thumbnail: "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_uvas-128.png" }, { title: "Palta", price: 2860.2, thumbnail: "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_abacate-128.png" }, { title: "Pera", price: 4320.5, thumbnail: "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_pera-128.png" }, { title: "Limon", price: 3350.0, thumbnail: "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_limao-128.png" }, { title: "Sandia", price: 4990.0, thumbnail: "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_melancia-128.png" }, { title: "Anana", price: 2300.5, thumbnail: "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_abacaxi-128.png" }])
+
+// 3) List documents of Products Collection
+db.products.find()
+
+// 3) List documents of Messages Collection
+db.messages.find()
+
+// 4) Count documents on Products Collection
+db.products.countDocuments()
+
+// 4) Count documents on Messages Collection
+db.messages.countDocuments()
+
+// 5) CRUD over Products Collection
+
+// a - Insert another product on Products Collection
+db.products.insertOne({ title: "Maracuya", price: 750.0, thumbnail: "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_maracuja-128.png" })
+
+// b - Querys 
+
+    // i - Products priced less than 1000
+    db.products.find({price: {$lte: 1000}})
+
+    // ii - Products priced between 1000 and 3000
+    db.products.find({
+        $and: [{price: {$gte: 1000}}, {price: {$lte: 3000}}]
+    })
+
+    // iii - Products with a price greater than 3000
+    db.products.find({ price: {$gte: 3000}})
+
+    // iv - The name of the third cheapest product.
+    db.products.find({},{title: 1}).sort({price: 1}, {_id: 1}).skip(2).limit(1)
+
+// c - Update Products Collection - add stock key to Products
+db.products.updateMany({}, {$set : {stock: 100}})
+
+// d - Set stock to zero to products priced greater than 4000
+db.products.updateMany({price: {$gte: 4000}}, {$set : {stock: 0}})
+
+// e - Remove products with price less than 1000
+db.products.deleteMany({price: {$lte: 1000}})
+
+// 6 - Create user "pepe" with password "asd456", read only ecommerce database.
+use admin
+db.createUser({
+    user: "pepe",
+    pwd: "asd456",
+    roles: [{role:"read", db:"ecommerce"}]
+})
+
+// MESSAGE ON MONGOSHELL 
+// ecommerce> db.products.insertOne({ title: "Tamarindo", price: 100.5, thumbnail: "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_tamarindo-128.png" })
+// MongoServerError: not authorized on ecommerce to execute command { insert: "products", documents: [ { title: "Tamarindo", price: 100.5, thumbnail: "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_tamarindo-128.png", _id: ObjectId('6215345c8004e4e1f3fc79a6') } ], ordered: true, lsid: { id: UUID("d83300a0-4723-4b81-ac8b-ff0450f682e0") }, $db: "ecommerce" }
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container m-auto">
+
+        <div class="fs-1 fw-bold text-primary">Ingrese Datos</div>
+        <form action="/personas" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp">
+            </div>
+            <div class="mb-3">
+                <label for="surname" class="form-label">Apellido</label>
+                <input type="text" class="form-control" name="surname" id="surname">
+            </div>
+            <div class="mb-3">
+                <label for="age" class="form-label">Edad</label>
+                <input type="number" class="form-control" name="age" id="age">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+        <div class="fs-1 fw-bold text-danger pt-5 mt-5">Historial</div>
+        <% if ( data.length ) { %>
+            <table class="table ">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Edad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% data.forEach( (contact, idx) => {%>
+                    <tr>
+                        <th scope="row"><%= idx+1 %></th>
+                        <td><%= contact.name %></td>
+                        <td><%= contact.surname %></td>
+                        <td><%= contact.age %></td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        <% } else { %>
+            <p class="p-3 mb-2 bg-warning text-dark">No se encontraron datos.</p>
+        <% } %>
+    </div>
+
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
